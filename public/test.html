@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>动手实现一个网页加载进度loading</title>
+    <style>
+        .loading {
+            /* display: table; */
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            background-color: #fff;
+            z-index: 5;
+        }
+
+        .loading .progress {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* width: 100%; */
+            transform: translate(-50%, -50%);
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        // var arr = [10, 10, 20, 30, 50, 70, 110];
+
+        function px(n) {
+            if (n <= 2) {
+                return 10;
+            }
+            return px(n - 1) + px(n - 2)
+        }
+        console.log(px(4))
+
+        /*     var a = 10;
+            function fn() {
+                console.log(this.a)
+            };
+            var obj = {
+                a: 5,
+                method: function (fn) {
+                    fn();
+                    arguments[0]();
+                    fn.call(obj, 12000011111);
+                }
+            };
+            obj.method(fn, 1213213); */
+        /* function Foo() {
+            getName = function () {
+                console.log('1');
+            };
+            return this;
+        }
+        Foo.getName = function () {
+            console.log('2');
+        };
+        Foo.prototype.getName = function () {
+            console.log('3');
+        };
+        var getName = function () {
+            console.log('4');
+        };
+        function getName() {
+            console.log(5);
+        }
+
+        Foo.getName();  //2
+        getName();   //4
+        Foo().getName();  //1
+        getName();   //1
+        new Foo.getName();  //2
+        new Foo().getName();  //3
+        new new Foo().getName();   //3 */
+        /*
+                                let abc = function (a) {
+                                    let bb = function (c) {
+                                        a += c;
+                                        bb.ccc = a
+                                        return bb;
+                                    }
+                                    return bb;
+                                }
+                                console.log(abc(1)(2)(3)(4).ccc)
+                         */
+
+        /*  let curry = function (first) {
+             let fun = function (second) {
+                 console.log(first,second, 'fun')
+                 first += second
+                 fun.value = first
+                 return fun;
+             }
+             fun.value = first
+             return fun;
+         }
+         console.log(curry(1)(2)(3).value,'真实值')
+
+
+         let add = function (first) {
+             let fun = function (second) {
+                 return add(first + second);
+             }
+             fun.abc = first;
+             return fun;
+         }
+         console.log(add(1).abc); */
+        /*
+                  let curry = function (first) {
+                            let count = Math.pow(first, 2)
+                            let fun = function (second) {
+                                count += Math.pow(second, 2)
+                                fun.value = count
+                                return fun;
+                            }
+                            fun.value = count
+                            return fun;
+                        }
+
+                        console.log(curry(1).value)   */
+
+        /*
+                let flag = 1;
+                console.log = (function (log) {
+                    return function (str) {
+                        log.call(console, `${flag++}:${str}`);
+                    }
+                })(console.log);
+
+                console.log(1)
+                console.log(21)
+                console.log(21) */
+
+
+        // f(1).value == 1;
+        // f(1)(2).value == 5;
+        // f(1)(2)(3).value == 14;
+    </script>
+</body>
+
+</html>

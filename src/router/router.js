@@ -22,27 +22,28 @@ import { ModuleReduxThunk } from './../module/collect'
 import App from '../page/App'
 
 // import A from '../page/A'
-// import Head from '../page/Head'
-// import Head1 from '../page/Header/Head1';
-// import Head2 from '../page/Header/Header2/Head2';
-// import Head3 from '../page/Header/Header2/Header3/Head3';
-// import Head4 from '../page/Header/Header2/Header3/Head4';
-
+// import _Head from '../page/Head'
+// import _Head1 from '../page/Header/Head1';
+// import _Head2 from '../page/Header/Header2/Head2';
+// import _Head3 from '../page/Header/Header2/Header3/Head3';
+// import _Head4 from '../page/Header/Header2/Header3/Head4';
+ 
 import withLoadable from './Loadable'
 
-const A = withLoadable(() => import('../page/A'));
+const A = withLoadable(() => import('../page/A'));  
 const Head = withLoadable(() => import('../page/Head'));
 const Head1 = withLoadable(() => import('../page/Header/Head1'));
 const Head2 = withLoadable(() => import('../page/Header/Header2/Head2'));
 const Head3 = withLoadable(() => import('../page/Header/Header2/header3/Head3'));
 const Head4 = withLoadable(() => import('../page/Header/Header2/header3/head4'));
-const ArrayComponent = { A, Head, Head1, Head2, Head3, Head4 };
+// const ArrayComponent = { _Head, _Head1, _Head2, _Head3, _Head4 };
 
-let objectComponent = {};
+/* let objectComponent = {};
 for (let i in ArrayComponent) {
     objectComponent[i] = withLoadable(ArrayComponent[i]);
-}
-console.log(objectComponent.Head, 'objectComponent')
+} */
+
+
 const Not = () => <h2>Not</h2>;
 export const routes = [
     {
@@ -120,6 +121,7 @@ export const RouteWithSubRoutes = route => {
         // render={props =>  <route.component {...props} routes={route.children}/> }
         // withLoadable(() => import('../page/Header/Header2/Head2'))
         render={props => {
+            // console.log(route.component, '123')
             return <route.component {...props}
                 routerGo={routerGo}
                 routerGet={routerGet}

@@ -1,5 +1,5 @@
 
-// import { request } from './../fetch'
+  import { request } from './../plug-in/fetch'
 // import { CollectF ,Fun} from './index'
 
 import arr from './data.js';
@@ -33,6 +33,14 @@ const ReduxHead = {
         first3: (reselect) => reselect.first3,
     },
     actions: {
+        asApi:  (v) => (dispatch, getState) => {
+            return request('/project/projectApi/statusList', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
+            // return request('/project/projectApi/searchById', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
+        },
+        // asApi:  (v) => (dispatch, getState) => {
+        //     return request('http://172.253.32.131:9106/project/projectApi/statusList', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
+        //     // return request('/project/projectApi/searchById', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
+        // },
         aa: (v) => (dispatch, getState) => {
 
             dispatch({

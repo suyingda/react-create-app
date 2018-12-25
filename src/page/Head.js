@@ -5,19 +5,38 @@ import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
 import RouterModule from '../router/routerModule.js'
 import { connect } from "react-redux";
 // import PUB from '../module/ReduxHead'
-
+let timer1 = undefined;
 class Head extends Component {
     constructor(arg) {
         super(arg);
         this.state = {
+            sss: {}
             // showComponent: this.props.match.path
         }
     }
-    componentDidMount() { }
+    componentDidMount() {
+        console.log(this.props)
+        timer1 = setInterval(() => {
+            console.log(1)
+        }, 1555)
+        // this.state.sss[1] = array2
+
+
+
+
+        // this.state.sss[1]()
+        // console.log(this.state.sss, 'ssss')
+    }
     render() {
         console.log(this.props, "head")
         return (
             <div>
+                <h1 onClick={
+                    ()=>{
+                        this.props.asApi()
+                    }
+                }>清楚
+                </h1>
                 <h1><Link to="/">返回首页</Link> </h1>
 
                 <div onClick={() => {
