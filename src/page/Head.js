@@ -16,9 +16,9 @@ class Head extends Component {
     }
     componentDidMount() {
         console.log(this.props)
-        timer1 = setInterval(() => {
-            console.log(1)
-        }, 1555)
+        // timer1 = setInterval(() => {
+        //     console.log(1)
+        // }, 1555)
         // this.state.sss[1] = array2
 
 
@@ -32,8 +32,11 @@ class Head extends Component {
         return (
             <div>
                 <h1 onClick={
-                    ()=>{
-                        this.props.asApi()
+                    () => {
+                        // this.props.asApi()
+                        this.props.asApi().then((v) => {
+                            console.log(v)
+                        })
                     }
                 }>清楚
                 </h1>
@@ -74,11 +77,12 @@ class Head extends Component {
 
 const mapStateToProps = ((state, props) => {
     // const { first1, first2, first3 } = PUB.reselect;
-    const { first1, first2, first3 } = props.ModuleReduxThunk['ReduxHead'];
+    const { first1, first2, first3, shuju } = props.ModuleReduxThunk['ReduxHead'];
     // const { dd } = props.ModuleReduxThunk['ReduxHead1'];
 
     return {
         // ...state,
+        shuju: shuju(state),
         first1: first1(state),
         first2: first2(state),
         first3: first3(state),

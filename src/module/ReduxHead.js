@@ -1,7 +1,5 @@
 
-  import { request } from './../plug-in/fetch'
-// import { CollectF ,Fun} from './index'
-
+import { request, syd } from './plug-in/fetch'
 import arr from './data.js';
 import { getReselect } from './reselect'
 
@@ -21,6 +19,7 @@ const ReduxHead = {
         first2: 1
     },
     reselect: {
+        shuju: (reselect) => reselect.shuju,
         first1: getReselect(getVisibleTodos, 'first1').reselect,
         /*  first1: (reselect) => {
              let aaa = []
@@ -33,9 +32,15 @@ const ReduxHead = {
         first3: (reselect) => reselect.first3,
     },
     actions: {
-        asApi:  (v) => (dispatch, getState) => {
-            return request('/project/projectApi/statusList', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
-            // return request('/project/projectApi/searchById', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
+        asApi: (v) => (dispatch, getState) => {
+            return syd({
+                Api: ReduxHead.Api.asApi,
+                params: v,
+                before: 'before',
+                success: 'success',
+                error: 'error',
+                dispatch
+            })
         },
         // asApi:  (v) => (dispatch, getState) => {
         //     return request('http://172.253.32.131:9106/project/projectApi/statusList', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
@@ -62,11 +67,24 @@ const ReduxHead = {
         }
     },
     Api: {
-        asApi: () => {
-            return request('/project/projectApi/searchById', ["afc24d3e-6667-45f2-9b42-07c86280d58a"]);
+        asApi: (params) => {
+            return request({
+                methods: 'post',
+                url: '/project/projectApi/statusList',
+                params: params
+            })
         }
     },
     reducers: {
+        shuju: (data = [], action) => {
+            switch (action.type) {
+                case "success":
+                    return action.date;
+                default:
+                    return data;
+            }
+
+        },
         first1: (data = [], action) => {
             switch (action.type) {
                 case "aa":

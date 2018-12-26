@@ -1,10 +1,12 @@
+
+
+
+
 import Axios from 'axios'
-
-
 // const Api ="http://172.253.32.131:9090/"
 // const Api = "http://172.253.32.131:9090/";
 // const Api = "http://172.254.68.140:8081";
-const Api = "http://172.253.32.131:9106";
+// const Api = "http://172.253.32.131:9106";
 
 const querystring = require('querystring');
 const obj = {
@@ -74,16 +76,52 @@ function getUserPermissions() {
 }).then((res)=>{
     console.log(res,'故宫')
 });*/
-export const request = function (url, params) {
+
+
+export const syd = function (v) {
+    const { Api, params, before, success, error, dispatch } = v;
+    dispatch({
+        type: before
+    })
     return new Promise((resolve, reject) => {
-        Axios.post(url, { 'params': params }).then(function (response) {
-            console.log(response, 'response');
-            return resolve(response)
+        Api(params).then((response) => {
+            resolve(response.data)
+            dispatch({
+                type: success,
+                date: response.data || []
+            })
+        }).catch((error) => {
+            dispatch({
+                type: error
+            })
+            reject(error, 'plug-in')
         })
-            .catch(function (error) {
-                console.log(error, '未能拿到接口数据');
-                return reject(error)
-            });
+    })
+
+}
+
+export const request = function ({ methods = [], url, params = null }) {
+    return new Promise((resolve, reject) => {
+        // 发送 POST 请求
+        Axios({
+            method: methods,
+            url: url,
+            data: params ? { 'params': params } : ''
+        }).then(function (response) {
+            // console.log(response, 'response');
+            return resolve(response)
+        }).catch(function (error) {
+            console.log(error, '未能拿到接口数据');
+            return reject(error)
+        });
+        // Axios.post(url, { 'params': params }).then(function (response) {
+        //     // console.log(response, 'response');
+        //     return resolve(response)
+        // })
+        //     .catch(function (error) {
+        //         console.log(error, '未能拿到接口数据');
+        //         return reject(error)
+        //     });
         /*  axios.post(Api + url, params).then(res => {
               if (res) {
                   // return res.json();
@@ -109,3 +147,4 @@ axios.all([getUserAccount(), getUserPermissions()])
     .then(axios.spread(function (acct, perms) {
         // 两个请求现在都执行完成
     }));*/
+

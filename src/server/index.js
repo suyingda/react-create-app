@@ -7,32 +7,15 @@ const webpack = require('webpack');
 
 const webpackDevMiddleware = require("webpack-dev-middleware")
 const webpackHotMiddleware = require('webpack-hot-middleware');
-import ServerConfig from '../../config/webpack.server';
+
 import ClientConfig from './../../config/webpack.client';
 import { renderToString } from 'react-dom/server'
 import React from 'react';
-import { StaticRouter, Switch } from 'react-router-dom';
+// import { StaticRouter, Switch } from 'react-router-dom';
 // import Routers from './../router';
 // import { RouteWithSubRoutes, routes } from "./../router/router";
 // app.use(express.static(DIST_DIR))
 app.use('/dist', express.static('dist'));//将文件设置成静态
-
-
-
-
-
-
-
-
-
-// httpProxy.on('error', function (err, req, res) {
-//     res.writeHead(500, {
-//         'Content-Type': 'text/plain'
-//     });
-
-//     res.end('Something went wrong. And we are reporting a custom error message.');
-// });
-
 if (false) {
     app.get('*', function (req, res) {
         const App = renderToString((
@@ -82,56 +65,65 @@ else {
             res.send(result)
             res.end()
         })
-       
-       var proxy = require('http-proxy').createProxyServer({});
-
-        var host = req.headers.host, ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-        console.log("client ip:" + ip + ", host:" + host);
-        proxy.web(req, res, { target: 'http://172.253.32.131:9106' });
-      /*   switch (host) {
-            case 'www.111.cn':
-                proxy.web(req, res, { target: 'http://localhost:3000' });
-                break;
-            case 'localhost:3000':
-                proxy.web(req, res, { target: 'http://172.253.32.131:9106' });
-              
-                break;
-            default:
-            
-                proxy.web(req, res, { target: 'http://172.253.32.131:9106' });
-            // res.writeHead(200, {
-            //     'Content-Type': 'text/plain'
-            // });
-    
-            // res.end('Welcome to my server!');
-        } */
+        // var host = req.headers.host, ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+        // console.log("client ip:" + ip + ", host:" + host);
     })
-   
 }
-// app.listen(1000, function () {
-//     console.log("successful localhost:" + 1000)
-// })
-// var http = require('http'), httpProxy = require('http-proxy');
+const proxyConfig = require('./Api/config');
+for (let proxyConfigkey in proxyConfig) {
+    try {
+        if (proxyConfig) {
+            app.all(proxyConfigkey, proxyConfig[proxyConfigkey]);
+        }
+    } catch (v) {
+        console.log('代理bug')
+    }
+}
 
-// 新建一个代理 Proxy Server 对象  
-// var proxy = httpProxy.createProxyServer({});
-
-// // 捕获异常  
-// proxy.on('error', function (err, req, res) {
-//     res.writeHead(500, {
-//         'Content-Type': 'text/plain'
-//     });
-//     res.end('Something went wrong. And we are reporting a custom error message.');
-// });
-
-// 在每次请求中，调用 proxy.web(req, res config) 方法进行请求分发  
-// var server = require('http').createServer(function (req, res) {
-// app.get("*", (req, res, next) => {
-//     // 在这里可以自定义你的路由分发  
-  
-// });
-// http://172.253.32.131:9106/project/projectApi/statusList
- 
-app.listen(3000, function () {
-    console.log("successful localhost:" + 3000)
+// process.env.NODE_TLS_REJECT_UNAUTHORIZED = " 0 ";
+app.listen(1000, function () {
+    console.log("successful localhost:" + 1000)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const options = {
+    // target: 'http://172.254.68.158:8081',
+    target: proxyConfig.target,
+    changeOrigin: true,
+    //   pathRewrite: {
+    //       "^/market": "/market"
+    //   }
+
+}
+console.log(options.target,'切换了')
+app.use('/project/*', proxy(options)); */
+//这句话的意思就是说，凡是你的ajax请求里面带api的 就还会自动帮你向http://172.253.32.131:9106这里进行数据请求
+/*   switch (host) {
+          case 'www.111.cn':
+              proxy.web(req, res, { target: 'http://localhost:3000' });
+              break;
+          case 'localhost:3000':
+              proxy.web(req, res, { target: 'http://172.253.32.131:9106' });
+
+              break;
+          default:
+
+              proxy.web(req, res, { target: 'http://172.253.32.131:9106' });
+          // res.writeHead(200, {
+          //     'Content-Type': 'text/plain'
+          // });
+
+          // res.end('Welcome to my server!');
+      } */

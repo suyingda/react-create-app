@@ -33,7 +33,9 @@ export const mapDispatchToProps = (params) => {
     }
     return callDate;
 };
-window.mapDispatchToProps = mapDispatchToProps;
+
+typeof window == "undefined" ? global['mapDispatchToProps'] = mapDispatchToProps : window['mapDispatchToProps'] = mapDispatchToProps
+// window.mapDispatchToProps = mapDispatchToProps;
 // const { first1, first2 } = Pub.reducers
 let reducers = combineReducers(ModuleReducers);
 export default reducers;

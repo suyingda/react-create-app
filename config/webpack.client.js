@@ -4,7 +4,7 @@ const merge = require('webpack-merge');
 const config = require('./webpack.base');
 const nodeExternals = require('webpack-node-externals')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
+const CleanWebpackPlugin= require('clean-webpack-plugin')
 const HtmlwebpackPlugin = require('html-webpack-plugin');
 const pathName = path.join(__dirname, '..');
 const clientConfig = {
@@ -17,7 +17,11 @@ const clientConfig = {
         vendor: ['react', 'react-dom'] //提取react模块作为公共的js文件
     }, */
     entry: {
-        app: ['webpack-hot-middleware/client?noInfo=true&reload=true', path.join(__dirname, '..', '/src/client/index.js')],
+        app: [
+            'webpack-hot-middleware/client?noInfo=true&reload=true',
+            'babel-polyfill',
+             path.join(__dirname, '..', '/src/client/index.js')
+        ],
         vendor: ['react', 'react-router-dom'] //提取react模块作为公共的js文件
     },
     output: {
@@ -45,11 +49,12 @@ const clientConfig = {
         new HtmlwebpackPlugin({
             filename: 'index.html',
             template: path.join(pathName, '/public/index.html'),
-            chunksSortMode: 'none'
+            chunksSortMode: 'none'   //无限递归子组件问题
         }), //创建html打包后
         //  new BaseHrefWebpackPlugin({baseHref: '/'}),
         // 实现刷新浏览器必写
         new webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin([path.join(__dirname, '..','/dist')],{ allowExternal: true}),// delete dist,
 
 
     ],

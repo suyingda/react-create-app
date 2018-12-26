@@ -12,7 +12,7 @@ import thunk from 'redux-thunk';
 import { Provider } from "react-redux";
 import reducers from "./../module/collect";
 const store = createStore(reducers, applyMiddleware(thunk));
- 
+
 // import Routers from './../router'
 const App = () => {
     return (
@@ -30,9 +30,11 @@ const App = () => {
         </Provider>
     )
 }
+
+console.log(module.hot,' module.hot module.hot module.hot module.hot')
 const AppComponent = (CreateApp) => {
     ReactDOM.hydrate(
-        <CreateApp suppressHydrationWarning={true} />, document.getElementById('root')
+        <CreateApp />, document.getElementById('root')
     );
 }
 AppComponent(App);

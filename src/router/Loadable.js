@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Loadable from 'react-loadable';
-const withLoadable = function (comp) { 
+import path from 'path';
+const withLoadable = function (comp) {
   return Loadable({
     loader: comp,
     loading: (props) => {
       if (props.error) {
         return <div>
-          加载错误。请刷新
-              </div>;
+          <Link to='/'> 加载错误。请刷新</Link>
+        </div>;
       } else if (props.timedOut) {
         return <div   >
           加载超时。请刷新
@@ -18,7 +20,8 @@ const withLoadable = function (comp) {
         return null;
       }
     },
-    timeout: 10000
+    timeout: 10000,
+    modules: comp,
   })
 }
 export default withLoadable;
