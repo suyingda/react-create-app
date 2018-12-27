@@ -3,11 +3,6 @@
 
 
 import Axios from 'axios'
-// const Api ="http://172.253.32.131:9090/"
-// const Api = "http://172.253.32.131:9090/";
-// const Api = "http://172.254.68.140:8081";
-// const Api = "http://172.253.32.131:9106";
-
 const querystring = require('querystring');
 const obj = {
     // "Content-Type": "text/plain;charset=UTF-8",
@@ -100,7 +95,7 @@ export const syd = function (v) {
 
 }
 
-export const request = function ({ methods = [], url, params = null }) {
+export const request = function ({ methods = 'post', url, params = null }) {
     return new Promise((resolve, reject) => {
         // 发送 POST 请求
         Axios({

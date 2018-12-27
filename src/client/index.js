@@ -31,7 +31,7 @@ const App = () => {
     )
 }
 
-console.log(module.hot,' module.hot module.hot module.hot module.hot')
+// console.log(module.hot,' module.hot module.hot module.hot module.hot')
 const AppComponent = (CreateApp) => {
     ReactDOM.hydrate(
         <CreateApp />, document.getElementById('root')

@@ -3,11 +3,14 @@ import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
 /* onClick={() => {
     window.open('/head?id=1231')
 }} */
+
+import styles from './css/App.css';
+console.log(styles, 'styles')
 class App extends Component {
     render() {
         return (
-            <div>
-                
+            <div className={styles.classNamea} >
+                123213
                 <Link to="/head">t0 go head</Link>
             </div>
         );

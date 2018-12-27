@@ -33,6 +33,15 @@ const ReduxHead = {
     },
     actions: {
         asApi: (v) => (dispatch, getState) => {
+            syd({
+                Api: ReduxHead.Api.asApi2,
+                params: [],
+                before: 'before',
+                success: 'success',
+                error: 'error',
+                dispatch
+            })
+
             return syd({
                 Api: ReduxHead.Api.asApi,
                 params: v,
@@ -72,6 +81,13 @@ const ReduxHead = {
                 methods: 'post',
                 url: '/project/projectApi/statusList',
                 params: params
+            })
+        },
+        asApi2: (params) => {
+            return request({
+                methods: 'post',
+                url: '/admin/dict/queryDictItems',
+                params: ["BUSINESS_TYPE2"]
             })
         }
     },

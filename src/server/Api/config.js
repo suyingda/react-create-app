@@ -2,10 +2,8 @@ import fs from 'fs';
 import httpProxy from "http-proxy";
 import path from 'path';
 const proxy = httpProxy.createProxyServer({});
-// var proxy = require('http-proxy-middleware');
 const proxyTargetFile = path.join(__dirname, '/proxy-target.js');
 // const targetConfig = eval(fs.readFileSync(proxyTargetFile, 'utf-8'));
-// console.log(targetConfig)
 proxy.on("error", () => {
     console.log("Could not connect to proxy, please try again...");
 });
@@ -38,7 +36,7 @@ fs.watch(proxyTargetFile, {
     }
 });
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = " 0 ";
-export default {
+export const configHttpProxy = {
     '/admin/*': (req, res) => {
         proxy.web(req, res, {
             target: proxyConfig.target,

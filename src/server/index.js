@@ -69,16 +69,26 @@ else {
         // console.log("client ip:" + ip + ", host:" + host);
     })
 }
-const proxyConfig = require('./Api/config');
-for (let proxyConfigkey in proxyConfig) {
+const { configHttpProxy } = require('./Api/config');
+for (let proxyConfigkey in configHttpProxy) {
     try {
-        if (proxyConfig) {
-            app.all(proxyConfigkey, proxyConfig[proxyConfigkey]);
+        if (configHttpProxy) {
+            app.all(proxyConfigkey, configHttpProxy[proxyConfigkey]);
         }
     } catch (v) {
         console.log('代理bug')
     }
 }
+import httpProxy from "http-proxy";
+const proxy = httpProxy.createProxyServer({});
+proxy.on("error", () => {
+    console.log("Could not connect to proxy, please try again...server");
+});
+// app.all('/admin/*', (req, res) => {
+//     proxy.web(req, res, {
+//         target: 'http://172.253.32.131:9192/',
+//     })
+// });
 
 // process.env.NODE_TLS_REJECT_UNAUTHORIZED = " 0 ";
 app.listen(1000, function () {
