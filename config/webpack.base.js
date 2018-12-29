@@ -1,6 +1,13 @@
 const path = require('path');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== 'production'
+console.log(devMode,'devModedevModedevModedevMode')
+// const extractLess = new ExtractTextPlugin({
+//     filename: "[name].[contenthash].css",
+//     disable: process.env.NODE_ENV === "development"
+// });
 module.exports = {
     module: {
         rules: [
@@ -25,17 +32,18 @@ module.exports = {
                 // exclude: /node_modules/,
             },
             {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [{
+                test: /\.(sa|sc|c|le)ss$/,
+                exclude: [path.resolve(path.join(__dirname, '..'), 'node_modules/')],
+                use: [
+                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    {
                         loader: 'css-loader',
                         options: {
                             modules: true,
                             localIdentName: '[path]-[name]-[local]-[hash:base64:6]',
                         }
-
-                    }, {
+                    },
+                    {
                         loader: 'postcss-loader',
                         options: {           // 如果没有options这个选项将会报错 No PostCSS Config found
                             plugins: (loader) => [
@@ -44,10 +52,13 @@ module.exports = {
                                 // require('cssnano')()  //压缩css
                             ]
                         }
-                    }]
-                }),
-                exclude: [path.resolve(path.join(__dirname, '..'), 'node_modules/')],
-            },
+                    },
+                    'less-loader'
+                ],
+
+            }
+
+
         ],
 
     }

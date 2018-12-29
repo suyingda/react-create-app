@@ -7,20 +7,26 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlwebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== 'production'
+
 const pathName = path.join(__dirname, '..');
 const clientConfig = {
     // target:'web',
     // devtool: "source-map", // 生产环境也可以设置，有点儿影响性能，但方便调试"
     mode: 'development',
+    // mode: 'production',
     // entry:'./src/client/index.js',
     /* entry: {
         app: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/client/index.js'],
         vendor: ['react', 'react-dom'] //提取react模块作为公共的js文件
     }, */
     entry: {
+        // index: ['webpack-hot-middleware/client?noInfo=true&reload=true', path.resolve(__dirname, '../src/client/index.js')]
         app: [
             'webpack-hot-middleware/client?noInfo=true&reload=true',
-            // 'babel-polyfill',
+            'babel-polyfill',
             path.join(__dirname, '..', '/src/client/index.js')
         ],
         // vendor: ['react', 'react-router-dom'] //提取react模块作为公共的js文件
@@ -40,11 +46,11 @@ const clientConfig = {
                 include: /\node_modules\$/
             })]
         }, */
-  /*   optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
-    }, */
+    /*   optimization: {
+          splitChunks: {
+              chunks: 'all'
+          }
+      }, */
     plugins: [
         //在build目录下自动生成index.html，指定其title
         new HtmlwebpackPlugin({
@@ -56,8 +62,17 @@ const clientConfig = {
         // 实现刷新浏览器必写
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin([path.join(__dirname, '..', '/dist')], { allowExternal: true }),// delete dist,
-        
-        new ExtractTextPlugin("/index.css") //默认其实目录问打包后的入口文件路径，所以需要..
+
+        // new ExtractTextPlugin("index.css"),//默认其实目录问打包后的入口文件路径，所以需要..
+
+        // new webpack.NoEmitOnErrorsPlugin()
+
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: devMode ? 'less.[name].css' : '[name].[hash].css',
+            chunkFilename: devMode ? 'less.[id].css' : '[id].[hash].css',
+        })
 
     ],
 

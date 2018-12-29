@@ -4,13 +4,13 @@ import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
     window.open('/head?id=1231')
 }} */
 
+
 import styles from './css/App.css';
-console.log(styles, 'styles')
+console.log(styles, 'css')
 class App extends Component {
     render() {
         return (
-            <div className={styles.classNamea} >
-                123213
+            <div className={styles.classNamea}  >
                 <Link to="/head">t0 go head</Link>
             </div>
         );

@@ -8,10 +8,13 @@ const withLoadable = function (comp) {
     loading: (props) => {
       if (props.error) {
         return <div>
-          <Link to='/'> 加载错误。请刷新</Link>
+          加载错误。请刷新
+          {/* <Link to='/'> 加载错误。请刷新</Link> */}
         </div>;
       } else if (props.timedOut) {
-        return <div   >
+        return <div onClick={() => {
+          console.log(1)
+        }}  >
           加载超时。请刷新
               </div>;
       } else if (props.pastDelay) {

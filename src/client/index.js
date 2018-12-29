@@ -33,12 +33,11 @@ const App = () => {
 
 // console.log(module.hot,' module.hot module.hot module.hot module.hot')
 const AppComponent = (CreateApp) => {
-    ReactDOM.hydrate(
+    // ReactDOM.hydrate(
+    ReactDOM.render(
         <CreateApp />, document.getElementById('root')
     );
 }
 AppComponent(App);
-
-
 
 

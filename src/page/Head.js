@@ -4,6 +4,9 @@ import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
 // import MyComponent from '../router/Loadable'
 import RouterModule from '../router/routerModule.js'
 import { connect } from "react-redux";
+
+import styles from './less/less.less';
+console.log(styles, 'less')
 // import PUB from '../module/ReduxHead'
 let timer1 = undefined;
 class Head extends Component {
@@ -20,26 +23,24 @@ class Head extends Component {
         //     console.log(1)
         // }, 1555)
         // this.state.sss[1] = array2
-
-
-
-
         // this.state.sss[1]()
         // console.log(this.state.sss, 'ssss')
     }
     render() {
         console.log(this.props, "head")
         return (
-            <div>
-                <h1 onClick={
+            <div className={styles.lessClass} >
+                {/* <div> */}
+                <div className={styles.lessChrilen} onClick={
+                    // <h1  onClick={
                     () => {
                         // this.props.asApi()
                         this.props.asApi().then((v) => {
                             console.log(v)
                         })
                     }
-                }>清楚
-                </h1>
+                }>1清楚1
+                </div>
                 <h1><Link to="/">返回首页</Link> </h1>
 
                 <div onClick={() => {

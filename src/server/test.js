@@ -38,7 +38,7 @@ var server = http.createServer(function (req, res) {
                 二参为读取成功返回的文本内容
         */
         if (err) {
-            console.log(err,'error!进入服务端请求')
+            // console.log(err,'error!进入服务端请求')
             fs.readFile('./dist/index.html', function (err, data) {console.log(file,'文件路径')
                 if (err) {
                     res.writeHeader(404, {

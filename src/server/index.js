@@ -52,6 +52,12 @@ else {
         // log: false,
         hot: true,
         heartbeat: 2000,
+        // stats: {
+        //     assets: true,
+        //     children: false,
+        //     modules: false,
+        //     colors: true
+        // }
     })
     app.use(devMiddleware)
     app.use(hotMiddleware);
