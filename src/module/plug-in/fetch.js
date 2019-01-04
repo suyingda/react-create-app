@@ -1,17 +1,23 @@
 
 
+import callApi from './callApi'
+callApi(`/randomID/`, {}, 'GET')
+callApi(`/getAllDictItem/`, {}, 'GET')
+
+
+
+
+
+
 
 
 import Axios from 'axios'
 const querystring = require('querystring');
 const obj = {
-    // "Content-Type": "text/plain;charset=UTF-8",
-    // "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
     "auth.sysid": "1001",
     "Content-Type": "application/json;charset=UTF-8",
     "auth.token": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjbXMiLCJ1c2VyQWNjb3VudCI6ImxpYW5neWluZyIsInVzZXJOYW1lIjoi5qKB6I65IiwidXNlcklkIjoiVVIxMDAwMDA3MDM4IiwiX3VzZXJJZCI6IlVSMTAwMDAwNzAzOCIsIl91aWRfIjoiVVIxMDAwMDA3MDM4IiwiYXVkIjoiMTAwMSIsImVwdCI6NTI1NjAwLCJleHAiOjE1NzA1ODcyNTAsImF0cCI6InNlY3VyaXR5IiwiYml6RGVwdElkIjoiT1IxMDAwMDAyNTYwIiwidGVhbUlkIjoiM2FjYmI3YjMtYzRmZS00ZGZmLWIyNDYtNGZiMWFmNzIwNGI5In0.1ZdxE-fOXmSjoivUqg1zGLOYMkgp4l5FVCV4vRW9Lx4",
-    "auth.permit": "nGdeacZmW3E1XM9Wi5alwcMUCKeVDZ",
-
+    "auth.permit": "nGdeacZmW3E1XM9Wi5alwcMUCKeVDZ"
 }
 // 添加请求拦截器
 const service = Axios.create({
@@ -19,6 +25,7 @@ const service = Axios.create({
     withCredentials: true
 });
 Axios.interceptors.request.use(config => {
+
     Object.assign(config.headers, obj);
     // config.data = Qs.stringify(config.data);
     return config;
@@ -61,16 +68,16 @@ function getUserPermissions() {
     }
 }*/
 // 发送 POST 请求
-/*Axios({
-    method: 'post',
-    url: '/admin/user/info',
-    headers:{
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    },
-
-}).then((res)=>{
-    console.log(res,'故宫')
-});*/
+// Axios({
+//     method: 'get',
+//     url: 'https://api.github.com/users/suyingda/repos',
+//     headers: {
+//         // 'Access-Control-Allow-Origin': "*",  
+//         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+//     },
+// }).then((res) => {
+//     console.log(res, '故宫')
+// });
 
 
 export const syd = function (v) {
@@ -100,10 +107,23 @@ export const request = function ({ methods = 'post', url, params = null }) {
         // 发送 POST 请求
         Axios({
             method: methods,
+            responseType: 'json', // 默认值是json
+            // proxy: {
+            //     host: 'http://172.253.32.131',
+            //     // host: 'http://172.254.68.158',
+            //     port: 9066,
+            //     auth: {
+            //       username: 'mikeymike',
+            //       password: 'rapunz3l'
+            //     }
+            //   },
+            // url: '/custinfo/get_shareholder?custid=null&_=' + (new Date()).getTime().toString(),
+            // url: 'http://172.253.32.131:9066/custinfo/creditstatus/add',
             url: url,
             data: params ? { 'params': params } : ''
         }).then(function (response) {
             // console.log(response, 'response');
+
             return resolve(response)
         }).catch(function (error) {
             console.log(error, '未能拿到接口数据');

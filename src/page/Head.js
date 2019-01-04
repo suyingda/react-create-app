@@ -40,7 +40,9 @@ class Head extends Component {
                         })
                     }
                 }>1清楚1
+
                 </div>
+                <a href="http://172.254.68.158:9000/custinfo/get_shareholder?custid=null&_='+(new Date()).getTime().toString()">adsf dsaf </a>
                 <h1><Link to="/">返回首页</Link> </h1>
 
                 <div onClick={() => {
