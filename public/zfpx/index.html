@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zfpx</title>
+
+</head>
+
+<body>
+<div id="app">
+    <span>a的值：{{a.aa}} a内部嵌套 </span>
+    <div>b的值：{{b}}</div>
+</div>
+
+
+<script src="index.js"></script>
+<script>
+    let vjs = new Vjs({
+        el: '#app',
+        data: {a: {aa: 1}, b: '2'}
+    })
+    let obja = {
+        ab: 1
+    }
+    let newVal = ""
+    Object.defineProperty(obja, 'ab', {
+        // enumerable: true,
+        get: function () {
+            return obja.ab;
+        },
+        set: function (val) {
+            if (newVal === val) return;
+            newVal  =val;
+        }
+    })
+    obja.ab=1211111111;
+    obja.ab=123;
+    console.log(obja, 'xxx')
+</script>
+
+</body>
+
+</html>

@@ -31,7 +31,59 @@
 <body>
     
     <script>
+        var cnt=0;
+        var miao =0; //秒
+        var fen =0; //秒
+        var xiaoshi =0; //秒
+        var tian =0; //秒
+     
 
+        function getTimefun(second){
+            var dateNow =second ;
+            var dateY =dateNow.getFullYear()
+            var dateM =dateNow.getMonth()+1;
+            var dateD =dateNow.getDate()
+            var dateH =dateNow.getHours()
+            var datem =dateNow.getMinutes()
+            var dateS =dateNow.getSeconds()
+            console.log(dateY+':年',dateM+':月',dateD+'：日',dateH+'时',datem+'分',dateS+'秒')
+            console.log('时间戳：'+dateNow.getTime())
+        }
+        var zhengque=new Date();
+        var yji=new Date('2019-01-15 09:20:0:0');
+            getTimefun(zhengque);
+            getTimefun(yji)
+            cnt= yji.getTime()-zhengque.getTime()
+           
+
+           setInterval(function(){
+               cnt= yji.getTime()-new Date().getTime()
+               if(cnt){
+               if( cnt>1000){
+                miao= (cnt / 1000) //秒
+               }     
+               if( cnt>60000 ){
+                fen=(cnt / 1000 / 60)//分
+            } 
+            if( cnt >3600000 ){
+                xiaoshi=( cnt / 1000 / 60 / 60 )//小时
+            }
+            if( cnt> 86400000 ){
+                tian=(cnt/ 1000 / 60 / 60 / 24)//天
+            }
+              
+                
+           }
+               console.log('剩余：'+miao+'秒')
+           },1000)
+        // console.log(parseInt(cnt/3600))
+        
+
+// console.log('时间戳：'+dateNow.getTime())
+// console.log('时间戳：'+Number(dateNow))
+// console.log('正确时间:'+dateNow)
+ 
+ 
  
           
    /*      var arr = [30, 10, 20, 50, 70, 110];

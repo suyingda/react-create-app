@@ -9,9 +9,12 @@ const HtmlwebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const PurifyCSSPlugin = require('purifycss-webpack');
 const devMode = process.env.NODE_ENV !== 'production'
 
 const pathName = path.join(__dirname, '..');
+const glob = require('glob');
 const clientConfig = {
     // target:'web',
     // devtool: "source-map", // 生产环境也可以设置，有点儿影响性能，但方便调试"
@@ -72,10 +75,13 @@ const clientConfig = {
             // both options are optional
             filename: devMode ? 'less.[name].css' : '[name].[hash].css',
             chunkFilename: devMode ? 'less.[id].css' : '[id].[hash].css',
-        })
-
+        }),
+        // new PurifyCSSPlugin({
+        //     // Give paths to parse for rules. These should be absolute!
+        //     paths: glob.sync(path.join(__dirname, 'src/page/*.js')),
+        //   })
     ],
-
+ 
     // externals: [nodeExternals()],
 }
 module.exports = merge(config, clientConfig);

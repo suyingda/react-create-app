@@ -11,6 +11,7 @@ class App extends Component {
     render() {
         return (
             <div className={styles.classNamea}  >
+                <div className={styles.classNamea1}>123</div>
                 <Link to="/head">t0 go head</Link>
             </div>
         );
