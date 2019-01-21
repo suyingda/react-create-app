@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dx </title>
+    <style>
+        body {
+            /* background-color: pink; */
+        }
+    </style>
+    <script>
+        var obj = {};
+        var initValue = 'hello';
+        Object.defineProperty(obj,"newKey",{
+            get:function (){
+                //当获取值的时候触发的函数
+                return initValue;
+            },
+            set:function (value){
+                //当设置值的时候触发的函数,设置的新值通过参数value拿到
+                initValue = value;
+            }
+        });
+        //获取值
+        console.log( obj.newKey );  //hello
+
+        //设置值
+        obj.newKey = 'change value';
+
+        console.log( obj.newKey ); //change value
+       /* var Vj = {
+            a: 1
+        };
+        Object.defineProperty(Vj, 'aa', {
+            // configurable:true,
+            // enumerable:true,
+            get: function () {
+                return Vj.a
+            },
+            set: function (v) {
+                this.aa = v;
+            }
+        });
+        Vj.aa = 12
+        // Vj.aa = '下班'
+*/
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

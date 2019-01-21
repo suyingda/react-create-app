@@ -4,6 +4,7 @@ function Vjs(options = {}) {
     var data = this._data = this.$options.data;
     observe(data);
     for (let keys in data) {
+        // this[keys]=data[keys]  //   Direct assignment not Object.defineProperty
         Object.defineProperty(this, keys, {
             enumerable: true,
             get: function () {
@@ -19,7 +20,7 @@ function Vjs(options = {}) {
 
 //vm.$options
 
-//观察对象给对象增加objectDefineProperty
+//观察对象给对象增加 objectDefineProperty
 function Observe(data) {  //这里写我们的主要逻辑
     for (let key in data) {
         let val = data[key];
@@ -33,7 +34,8 @@ function Observe(data) {  //这里写我们的主要逻辑
             set: function (newVal) {
                 if (val === newVal) {
                     return;
-                }
+                };
+                dep.notify({newVal,key,data});
                 val = newVal;
                 observe(newVal)
             }
@@ -46,9 +48,7 @@ function observe(data) {
     return new Observe(data);
 }
 
-// var d = "a的值：{{a.aa}}{{a.aa}}";
-// var patt = /\{\{[^\}\}]+\}\}/g;
-// console.log(d.match(patt))
+
 function Comp(el, vm) {
     vm.$el = document.querySelector(el);
     let fragment = document.createDocumentFragment();
@@ -59,7 +59,6 @@ function Comp(el, vm) {
 
     function replace(fragment) {
         Array.from(fragment.childNodes).forEach(function (node) {
-            console.log(node)
             let text = node.textContent;
             let reg = /\{\{(.*)\}\}/;
             if (node.nodeType === 3 && reg.test(text)) {
@@ -69,6 +68,9 @@ function Comp(el, vm) {
                 arr.forEach(function (k) {
                     val = val[k]
                 });
+                dep.addSub(new Watcher(function ({newVal,key,data}) {
+                    node.textContent = text.replace(reg, newVal);
+                }));
                 node.textContent = text.replace(reg, val);
             }
             if (node.childNodes) {
@@ -76,10 +78,33 @@ function Comp(el, vm) {
             }
         })
     }
+
     vm.$el.appendChild(fragment);
-    // let stirngs = '123a{a}a';
-    // let testsxx = /\{(.*)\}/
-    // if(testsxx.test(stirngs)){
-    //     // console.log(RegExp.$2,'是')
-    // }
 }
+
+
+function Dep() {
+    this.subs = [];
+}
+Dep.prototype.addSub = function (sub) {
+    this.subs.push(sub)
+};
+Dep.prototype.notify = function ({newVal,key,data}) {
+    this.subs.forEach((sub) => sub.update({newVal,key,data}));
+};
+function Watcher(fn) {
+    this.fn = fn;
+}
+Watcher.prototype.update = function ({newVal,key,data}) {
+    this.fn({newVal,key,data});
+};
+let watcher = new Watcher(function () {
+    console.log('observe')
+});
+let dep = new Dep();
+// dep.addSub(watcher);
+// dep.addSub(watcher);
+console.log(dep.subs);
+// var d = "a的值：{{a.aa}}{{a.aa}}";
+// var patt = /\{\{[^\}\}]+\}\}/g;
+// console.log(d.match(patt))

@@ -10,9 +10,11 @@
 </head>
 
 <body>
+
 <div id="app">
-    <span>a的值：{{a.aa}} a内部嵌套 </span>
+    <span>a的值：{{a.aa}} </span>
     <div>b的值：{{b}}</div>
+    <div>c的值：{{c}}</div>
 </div>
 
 
@@ -20,25 +22,61 @@
 <script>
     let vjs = new Vjs({
         el: '#app',
-        data: {a: {aa: 1}, b: '2'}
+        data: {a: {aa: 1}, b: '2', c: '大大'}
     })
-    let obja = {
-        ab: 1
+
+
+    /*   let obj = {
+        b: 1
     }
-    let newVal = ""
-    Object.defineProperty(obja, 'ab', {
-        // enumerable: true,
-        get: function () {
-            return obja.ab;
-        },
-        set: function (val) {
-            if (newVal === val) return;
-            newVal  =val;
-        }
-    })
-    obja.ab=1211111111;
-    obja.ab=123;
-    console.log(obja, 'xxx')
+  let newVal = obj.b
+     Object.defineProperty(obj, 'b', {
+         // enumerable: true,
+         get: function () {
+             return newVal;
+         },
+         set: function (val) {
+             console.log(newVal, val)
+             if (newVal === val) return;
+             newVal = val;
+         }
+     })
+
+     function wendang() {
+         let Domdata = document.querySelector('#app')
+         let fromdata = document.createDocumentFragment();
+         while (Domdata.firstChild)
+             fromdata.appendChild(Domdata.firstChild)
+         console.log(fromdata)
+         let x = Array.from(fromdata.childNodes);
+         x.forEach((items) => {
+             if(items.textContent && items.nodeType!==3){
+                 nd.addFuns(function () {
+                     items.textContent = '还真的可以？'
+                 })
+             }
+             console.log(items.textContent);
+         })
+
+         Domdata.appendChild(fromdata)
+     }
+
+
+
+     function update() {
+         this.Funs = [];
+     }
+
+     update.prototype.addFuns = function (val) {
+         this.Funs.push(val)
+     }
+
+     let nd = new update();
+     setTimeout(() => {
+         console.log(nd)
+         nd.Funs[0]()
+     }, 2000)
+     wendang();*/
 </script>
 
 </body>
