@@ -24,20 +24,23 @@ function Vjs(options = {}) {
 function Observe(data) {  //这里写我们的主要逻辑
     for (let key in data) {
         let val = data[key];
+        let dep = new Dep();
         observe(val);
         Object.defineProperty(data, key, {
             enumerable: true,
             // configurable: true,
             get: function () {
+                Dep.target && dep.addSub(Dep.target)
                 return val;
             },
             set: function (newVal) {
                 if (val === newVal) {
                     return;
                 };
-                dep.notify({newVal,key,data});
+                // dep.notify(newVal);
                 val = newVal;
-                observe(newVal)
+                observe(newVal);
+                dep.notify();
             }
         })
     }
@@ -68,9 +71,9 @@ function Comp(el, vm) {
                 arr.forEach(function (k) {
                     val = val[k]
                 });
-                dep.addSub(new Watcher(function ({newVal,key,data}) {
+                new Watcher(vm, RegExp.$1, function (newVal) {
                     node.textContent = text.replace(reg, newVal);
-                }));
+                });
                 node.textContent = text.replace(reg, val);
             }
             if (node.childNodes) {
@@ -89,14 +92,29 @@ function Dep() {
 Dep.prototype.addSub = function (sub) {
     this.subs.push(sub)
 };
-Dep.prototype.notify = function ({newVal,key,data}) {
-    this.subs.forEach((sub) => sub.update({newVal,key,data}));
+Dep.prototype.notify = function () {
+    this.subs.forEach((sub) => sub.update());
 };
-function Watcher(fn) {
+function Watcher(vm, exp, fn) {
+    this.vm = vm;
+    this.exp = exp;
     this.fn = fn;
+    Dep.target = this;
+    let val = vm;
+    let arr = exp && exp.split('.');
+    arr && arr.forEach(function (k) {  //this.a.a
+        val = val[k]
+    })
+    Dep.target = null;
+
 }
-Watcher.prototype.update = function ({newVal,key,data}) {
-    this.fn({newVal,key,data});
+Watcher.prototype.update = function () {
+    let val = this.vm;
+    let arr = this.exp && this.exp.split('.');
+    arr && arr.forEach(function (k) {  //this.a.a
+        val = val[k]
+    })
+    this.fn(val);
 };
 let watcher = new Watcher(function () {
     console.log('observe')
