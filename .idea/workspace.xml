@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="327e21cd-e9ce-4be1-a7e5-3dcaabe8dac2" name="Default" comment="k">
+      <change afterPath="$PROJECT_DIR$/public/tx/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tx/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/zfpx/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/zfpx/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.js" afterDir="false" />
     </list>
@@ -18,112 +21,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="webpack.client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret column="547" lean-forward="true" selection-start-column="547" selection-end-column="547" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+            <state relative-caret-position="-1119">
+              <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
+        <entry file="file://$PROJECT_DIR$/public/tx/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="208">
+              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/V.html">
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/tx/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-396">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="-132">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routerModule.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/router/routerModule.js">
+      <file leaf-file-name="lib.es5.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="869" column="4" selection-start-line="869" selection-start-column="4" selection-end-line="869" selection-end-column="4" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Loadable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/router/Loadable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Head.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/Head.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/app.client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="6299" column="1059" selection-start-line="6299" selection-start-column="1059" selection-end-line="6299" selection-end-column="1059" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4.720b1.chunk.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/4.720b1.chunk.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classNamea</find>
-      <find>child</find>
-      <find>appndChild</find>
-      <find>fragment</find>
-      <find>zhu</find>
       <find>vjs</find>
       <find>zhixing</find>
-      <find>Observe</find>
       <find>Vjs</find>
       <find>console.log</find>
       <find>第三方来看待世界法律肯定是佛教看</find>
@@ -135,15 +83,23 @@
       <find>data</find>
       <find>登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发</find>
       <find>djflsajflksjflkdssa</find>
-      <find>dep</find>
       <find>replace</find>
       <find>Comp</find>
-      <find>addSub</find>
-      <find>notify</find>
       <find>watcher</find>
-      <find>Watcher</find>
       <find>console.lo</find>
       <find>update</find>
+      <find>arr</find>
+      <find>sydarr</find>
+      <find>Observe</find>
+      <find>dep</find>
+      <find>notify</find>
+      <find>addSub</find>
+      <find>wendang</find>
+      <find>Dep</find>
+      <find>newVal</find>
+      <find>Watcher</find>
+      <find>target</find>
+      <find>child2</find>
     </findStrings>
     <dirStrings>
       <dir>D:\react-create-app\src</dir>
@@ -167,8 +123,11 @@
         <option value="$PROJECT_DIR$/src/router/router.js" />
         <option value="$PROJECT_DIR$/src/page/Head.js" />
         <option value="$PROJECT_DIR$/src/data/index.js" />
-        <option value="$PROJECT_DIR$/public/zfpx/index.html" />
         <option value="$PROJECT_DIR$/public/zfpx/index.js" />
+        <option value="$PROJECT_DIR$/public/zfpx/index.html" />
+        <option value="$PROJECT_DIR$/public/tx/index.js" />
+        <option value="$PROJECT_DIR$/public/tx/index.html" />
+        <option value="$PROJECT_DIR$/public/tx/index2.html" />
       </list>
     </option>
   </component>
@@ -189,8 +148,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="246" />
-    <option name="y" value="34" />
+    <option name="x" value="179" />
+    <option name="y" value="66" />
     <option name="width" value="1449" />
     <option name="height" value="986" />
   </component>
@@ -200,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +175,12 @@
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="tx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
@@ -251,11 +215,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Investment-Bank-Platform-frontend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -295,31 +260,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53526000" />
+    <option name="totallyTimeSpent" value="75004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="34" width="1449" height="986" extended-state="0" />
+    <frame x="179" y="66" width="1449" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19288257" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298611" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3888214" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19288257" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="313" height="786" id="Documentation" order="3" side_tool="true" weight="0.3299566" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3888214" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,12 +310,10 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/dist/app.client.js</url>
           <line>6311</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/data/index.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
@@ -347,20 +321,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -498,7 +458,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/array.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="495">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
@@ -548,25 +508,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="528">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/0.a61bc.chunk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/0.a61bc.chunk.js" />
     <entry file="file://$PROJECT_DIR$/src/page/Head.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,35 +526,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/app.client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="255651">
           <caret line="6299" column="1059" selection-start-line="6299" selection-start-column="1059" selection-end-line="6299" selection-end-column="1059" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/0.7fa51.chunk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="21" column="630" lean-forward="true" selection-start-line="21" selection-start-column="630" selection-end-line="21" selection-end-column="630" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/0.663d4.chunk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="20" column="435" selection-start-line="20" selection-start-column="416" selection-end-line="20" selection-end-column="435" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/0.7fa51.chunk.js" />
+    <entry file="file://$PROJECT_DIR$/dist/0.663d4.chunk.js" />
     <entry file="file://$PROJECT_DIR$/src/data/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret column="547" lean-forward="true" selection-start-column="547" selection-end-column="547" />
+        <state>
+          <caret column="547" selection-start-column="547" selection-end-column="547" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/router/routerModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="231">
           <caret line="9" column="42" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="42" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -622,22 +561,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/V.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
+        <state relative-caret-position="396">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="288">
+          <caret line="869" column="4" selection-start-line="869" selection-start-column="4" selection-end-line="869" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+        <state relative-caret-position="-1119">
+          <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
         </state>
       </provider>
     </entry>

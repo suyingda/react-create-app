@@ -30,13 +30,14 @@ function Observe(data) {  //这里写我们的主要逻辑
             enumerable: true,
             // configurable: true,
             get: function () {
-                Dep.target && dep.addSub(Dep.target)
+                Dep.target && dep.addSub(Dep.target);
                 return val;
             },
             set: function (newVal) {
                 if (val === newVal) {
                     return;
-                };
+                }
+                ;
                 // dep.notify(newVal);
                 val = newVal;
                 observe(newVal);
@@ -89,40 +90,46 @@ function Comp(el, vm) {
 function Dep() {
     this.subs = [];
 }
+
 Dep.prototype.addSub = function (sub) {
     this.subs.push(sub)
 };
 Dep.prototype.notify = function () {
-    this.subs.forEach((sub) => sub.update());
+    this.subs.forEach((sub) => {
+        console.log(sub, 'sub')
+        sub.update()
+    });
 };
+
 function Watcher(vm, exp, fn) {
     this.vm = vm;
     this.exp = exp;
     this.fn = fn;
     Dep.target = this;
-    let val = vm;
-    let arr = exp && exp.split('.');
-    arr && arr.forEach(function (k) {  //this.a.a
-        val = val[k]
-    })
+    let syd = vm;
+    let sydarr = exp && exp.split('.');
+    sydarr && sydarr.forEach(function (k) {  //this.a.a
+        syd = syd[k]
+    });
     Dep.target = null;
-
 }
+
 Watcher.prototype.update = function () {
     let val = this.vm;
     let arr = this.exp && this.exp.split('.');
     arr && arr.forEach(function (k) {  //this.a.a
         val = val[k]
     })
+
     this.fn(val);
 };
-let watcher = new Watcher(function () {
-    console.log('observe')
-});
-let dep = new Dep();
+// let watcher = new Watcher(function () {
+//     console.log('observe')
+// });
+// let dep = new Dep();
 // dep.addSub(watcher);
 // dep.addSub(watcher);
-console.log(dep.subs);
+// console.log(dep);
 // var d = "a的值：{{a.aa}}{{a.aa}}";
 // var patt = /\{\{[^\}\}]+\}\}/g;
 // console.log(d.match(patt))

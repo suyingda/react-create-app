@@ -10,73 +10,108 @@
 </head>
 
 <body>
-
+<span>a的值：{{a.aa}} </span>
+<div>c的值：{{c}}</div>
 <div id="app">
-    <span>a的值：{{a.aa}} </span>
+
     <div>b的值：{{b}}</div>
-    <div>c的值：{{c}}</div>
+
 </div>
 
 
 <script src="index.js"></script>
 <script>
-    let vjs = new Vjs({
-        el: '#app',
-        data: {a: {aa: 1}, b: '2', c: '大大'}
-    })
+    // let vjs = new Vjs({
+    //     el: '#app',
+    //     data: {a: {aa: 1}, b: '2', c: '大大'}
+    // })
 
 
-    /*   let obj = {
+    let obj = {
         b: 1
     }
-  let newVal = obj.b
-     Object.defineProperty(obj, 'b', {
-         // enumerable: true,
-         get: function () {
-             return newVal;
-         },
-         set: function (val) {
-             console.log(newVal, val)
-             if (newVal === val) return;
-             newVal = val;
-         }
-     })
+    let newVal = obj.b
+    let dep = new Dep();
+    Object.defineProperty(obj, 'b', {
+        // enumerable: true,
+        get: function () {
+            Dep.target && dep.addSub(Dep.target);
+            console.log(dep, 'get')
+            return newVal;
+        },
+        set: function (val) {
+            if (newVal === val) return;
+            newVal = val;
+            dep.notify();
+            console.log(dep, 'set')
+        }
+    })
 
-     function wendang() {
-         let Domdata = document.querySelector('#app')
-         let fromdata = document.createDocumentFragment();
-         while (Domdata.firstChild)
-             fromdata.appendChild(Domdata.firstChild)
-         console.log(fromdata)
-         let x = Array.from(fromdata.childNodes);
-         x.forEach((items) => {
-             if(items.textContent && items.nodeType!==3){
-                 nd.addFuns(function () {
-                     items.textContent = '还真的可以？'
-                 })
-             }
-             console.log(items.textContent);
-         })
+    function wendang() {
+        let Domdata = document.querySelector('#app')
+        let fromdata = document.createDocumentFragment();
+        while (Domdata.firstChild) {
+            fromdata.appendChild(Domdata.firstChild)
+        }
+        let x = Array.from(fromdata.childNodes);
+        let reg = /\{\{(.*)\}\}/;
+        x.forEach((items) => {
+            let text = items.textContent;
+            if (reg.test(text) && items.nodeType !== 3) {
+                let arr = RegExp.$1.split('.');
+                let val = obj;
+                arr.forEach((arritems) => {
+                    val = val[arritems]
+                })
+                new Watcher(obj, RegExp.$1, function (newVal) {
+                    items.textContent = text.replace(reg, newVal)
+                    }
+                )
+                items.textContent = text.replace(reg, val)
+            }
+            console.log(items.textContent);
+        })
 
-         Domdata.appendChild(fromdata)
-     }
+        Domdata.appendChild(fromdata)
+    }
+
+    function Dep() {
+        this.subs = [];
+    }
+
+    Dep.prototype.addSub = function (sub) {
+        this.subs.push(sub)
+    }
+    Dep.prototype.notify = function () {
+        this.subs.forEach((sub) => {
+            sub.update()
+        });
+    }
+
+    function Watcher(vm, exp, fn) {
+        this.vm = vm;
+        this.exp = exp;
+        this.fn = fn;
+        Dep.target = this;
+        let val = vm;
+        let arr = exp && exp.split('.');
+        arr && arr.forEach(function (k) {  //this.a.a
+            val = val[k]
+        });
+        Dep.target = null;
+    }
+
+    Watcher.prototype.update = function () {
+        let val = this.vm;
+        let arr = this.exp && this.exp.split('.');
+        arr && arr.forEach(function (k) {  //this.a.a
+            val = val[k]
+        });
+        this.fn(val);
+    }
 
 
-
-     function update() {
-         this.Funs = [];
-     }
-
-     update.prototype.addFuns = function (val) {
-         this.Funs.push(val)
-     }
-
-     let nd = new update();
-     setTimeout(() => {
-         console.log(nd)
-         nd.Funs[0]()
-     }, 2000)
-     wendang();*/
+    wendang();
 </script>
 
 </body>
