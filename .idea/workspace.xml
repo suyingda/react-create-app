@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="327e21cd-e9ce-4be1-a7e5-3dcaabe8dac2" name="Default" comment="k">
-      <change afterPath="$PROJECT_DIR$/public/tx/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tx/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tx/index3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/zfpx/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/zfpx/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,17 +21,38 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1119">
-              <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="40" />
+            <state relative-caret-position="244">
+              <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/huzhi/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
               <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index3.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/tx/index3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -51,7 +69,7 @@
       <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/tx/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
+            <state relative-caret-position="363">
               <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
@@ -70,7 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vjs</find>
       <find>zhixing</find>
       <find>Vjs</find>
       <find>console.log</find>
@@ -83,7 +100,6 @@
       <find>data</find>
       <find>登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发</find>
       <find>djflsajflksjflkdssa</find>
-      <find>replace</find>
       <find>Comp</find>
       <find>watcher</find>
       <find>console.lo</find>
@@ -98,8 +114,10 @@
       <find>Dep</find>
       <find>newVal</find>
       <find>Watcher</find>
-      <find>target</find>
       <find>child2</find>
+      <find>target</find>
+      <find>replace</find>
+      <find>Yellowdog</find>
     </findStrings>
     <dirStrings>
       <dir>D:\react-create-app\src</dir>
@@ -128,6 +146,7 @@
         <option value="$PROJECT_DIR$/public/tx/index.js" />
         <option value="$PROJECT_DIR$/public/tx/index.html" />
         <option value="$PROJECT_DIR$/public/tx/index2.html" />
+        <option value="$PROJECT_DIR$/public/tx/index3.html" />
       </list>
     </option>
   </component>
@@ -148,8 +167,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="179" />
-    <option name="y" value="66" />
+    <option name="x" value="58" />
+    <option name="y" value="40" />
     <option name="width" value="1449" />
     <option name="height" value="986" />
   </component>
@@ -209,6 +228,13 @@
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="huzhi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -260,10 +286,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75004000" />
+    <option name="totallyTimeSpent" value="83384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="179" y="66" width="1449" height="986" extended-state="0" />
+    <frame x="58" y="40" width="1449" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19288257" />
@@ -321,20 +347,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/router/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2013">
@@ -573,10 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
+    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1119">
-          <caret line="65" column="11" lean-forward="true" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="40" />
+        <state relative-caret-position="468">
+          <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -587,17 +599,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/huzhi/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/tx/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
+        <state relative-caret-position="363">
           <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
+    <entry file="file://$PROJECT_DIR$/public/tx/index3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+        <state relative-caret-position="429">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>

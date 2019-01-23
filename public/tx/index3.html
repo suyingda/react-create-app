@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>t?</title>
+</head>
+<body>
+<script>
+    function PrototypeF() {
+        this.jn = '???';
+        this.dj = '???';
+        this.show = function () {
+            console.log(this.name + '的年龄：' + this.age + '岁:技能等级:' + this.jn, this.dj + '级')
+        }
+    }
+    function Animal(name, age) {
+        this.name = name;
+        this.age = age;
+        this.change=function(){
+            this.jn=this.jn;
+            this.dj='88';
+        }
+        // PrototypeF.call(this)
+    }
+
+    Animal.prototype = new PrototypeF()
+    let P = new PrototypeF();
+    let dog = new Animal('dog', 22);
+    let cat = new Animal('cat', 24);
+    let PipiShrimp = new Animal('PipiShrimp', 124);
+    dog.change()
+    dog.show()
+    cat.show()
+    console.log(P)
+    //
+    // dog.jn = '闪电旋风皮'
+    // dog.dj = '100';
+    // cat.jn = '雷霆电光闪'
+    // cat.dj = '110'
+
+</script>
+</body>
+</html>
