@@ -13,9 +13,7 @@
 <span>a的值：{{a.aa}} </span>
 <div>c的值：{{c}}</div>
 <div id="app">
-
     <div>b的值：{{b}}</div>
-
 </div>
 
 
@@ -88,17 +86,17 @@
         });
     }
 
-    function Watcher(vm, exp, fn) {
+    function Watcher(vm, exp, fn) {  console.log('new Watcher');
         this.vm = vm;
         this.exp = exp;
         this.fn = fn;
         Dep.target = this;
-        let val = vm;
-        let arr = exp && exp.split('.');
-        arr && arr.forEach(function (k) {  //this.a.a
-            val = val[k]
-        });
-        Dep.target = null;
+        // let val = vm;
+        // let arr = exp && exp.split('.');
+        // arr && arr.forEach(function (k) {  //this.a.a
+        //     val = val[k]
+        // });
+        // Dep.target = null;
     }
 
     Watcher.prototype.update = function () {
@@ -107,7 +105,7 @@
         arr && arr.forEach(function (k) {  //this.a.a
             val = val[k]
         });
-        this.fn(val);
+        this.fn('总听不见');
     }
 
 

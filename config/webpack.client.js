@@ -31,6 +31,10 @@ const clientConfig = {
             'webpack-hot-middleware/client?noInfo=true&reload=true',
             'babel-polyfill',
             path.join(__dirname, '..', '/src/client/index.js')
+        ], app2: [
+            'webpack-hot-middleware/client?noInfo=true&reload=true',
+            'babel-polyfill',
+            path.join(__dirname, '..', '/src/client/index.js')
         ],
         // vendor: ['react', 'react-router-dom'] //提取react模块作为公共的js文件
     },

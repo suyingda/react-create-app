@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="327e21cd-e9ce-4be1-a7e5-3dcaabe8dac2" name="Default" comment="k">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Proxy/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tx/tx1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tx/websocket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/zfpx/newTarget.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/tx/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tx/index3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/zfpx/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/zfpx/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,55 +25,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="index3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/tx/index3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/huzhi/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="403">
+              <caret line="64" column="38" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
+        <entry file="file://$PROJECT_DIR$/public/Proxy/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+            <state relative-caret-position="245">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/tx/index3.html">
+      <file leaf-file-name="newTarget.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/zfpx/newTarget.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="231">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+      <file leaf-file-name="websocket.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/tx/websocket.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="245">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -75,26 +73,44 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/tx/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="773">
               <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/tx/index2.html">
+      <file leaf-file-name="tx1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/tx/tx1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="429">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.es5.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <file leaf-file-name="webpack.base.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/webpack.base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="869" column="4" selection-start-line="869" selection-start-column="4" selection-end-line="869" selection-end-column="4" />
+            <state relative-caret-position="33">
+              <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.client.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib.dom.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="3018" column="57" selection-start-line="3018" selection-start-column="57" selection-end-line="3018" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -103,11 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zhixing</find>
-      <find>Vjs</find>
-      <find>console.log</find>
-      <find>第三方来看待世界法律肯定是佛教看</find>
-      <find>来看待世界法律教看</find>
       <find>三方来看待世界法律肯定是佛教看</find>
       <find>123213213</find>
       <find>上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉</find>
@@ -133,10 +144,16 @@
       <find>target</find>
       <find>replace</find>
       <find>Yellowdog</find>
+      <find>Domdata</find>
+      <find>showHello</find>
+      <find>btn3</find>
+      <find>console.log =</find>
+      <find>unction (console</find>
     </findStrings>
     <dirStrings>
       <dir>D:\react-create-app\src</dir>
       <dir>D:\react-create-app\dist</dir>
+      <dir>D:\react-create-app</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -156,13 +173,18 @@
         <option value="$PROJECT_DIR$/src/router/router.js" />
         <option value="$PROJECT_DIR$/src/page/Head.js" />
         <option value="$PROJECT_DIR$/src/data/index.js" />
-        <option value="$PROJECT_DIR$/public/zfpx/index.js" />
-        <option value="$PROJECT_DIR$/public/zfpx/index.html" />
         <option value="$PROJECT_DIR$/public/tx/index.js" />
         <option value="$PROJECT_DIR$/public/tx/index.html" />
-        <option value="$PROJECT_DIR$/public/tx/index2.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/zfpx/newTarget.html" />
+        <option value="$PROJECT_DIR$/public/zfpx/index.html" />
+        <option value="$PROJECT_DIR$/public/zfpx/index.js" />
         <option value="$PROJECT_DIR$/public/tx/index3.html" />
+        <option value="$PROJECT_DIR$/public/tx/index2.html" />
+        <option value="$PROJECT_DIR$/public/tx/websocket.html" />
+        <option value="$PROJECT_DIR$/public/Proxy/index.html" />
+        <option value="$PROJECT_DIR$/public/tx/tx1.html" />
+        <option value="$PROJECT_DIR$/config/webpack.client.js" />
       </list>
     </option>
   </component>
@@ -182,9 +204,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="10" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="50" />
     <option name="width" value="1867" />
     <option name="height" value="1016" />
   </component>
@@ -215,7 +237,19 @@
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="Proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="tx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="zfpx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
@@ -227,6 +261,12 @@
               <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
@@ -256,7 +296,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Investment-Bank-Platform-frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -292,46 +332,37 @@
       <workItem from="1547789293958" duration="10481000" />
       <workItem from="1548032503022" duration="14281000" />
       <workItem from="1548053209248" duration="6592000" />
+      <workItem from="1548395567863" duration="16606000" />
+      <workItem from="1550104535900" duration="31285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84657000" />
+    <option name="totallyTimeSpent" value="142651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="10" y="50" width="1867" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14323467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19253977" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298611" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3888214" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19288257" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="313" height="786" id="Documentation" order="3" side_tool="true" weight="0.3299566" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3888214" />
-      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,71 +388,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/module/plug-in/fetch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2706">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/V.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/canvas.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/css/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2805">
@@ -514,20 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/0.a61bc.chunk.js" />
     <entry file="file://$PROJECT_DIR$/src/page/Head.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -579,53 +531,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/tx/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/huzhi/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/tx/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/tx/index3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/ReduxHead.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="e#291#331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/Reduxhead1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/data.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module/reselect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/zfpx/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="72" column="37" lean-forward="true" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/websocket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/zfpx/newTarget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="3018" column="57" selection-start-line="3018" selection-start-column="57" selection-end-line="3018" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Proxy/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/tx1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

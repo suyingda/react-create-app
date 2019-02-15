@@ -9,21 +9,32 @@
 </head>
 <body>
 <script>
+    var string='<div>d</div><em>I am a girl.</em><div>{{ze}}1111</div>{{zzzzz}}<div>等待</div>';
+    var reg=/(<div>)[<\/div>$]+(<\/div>)/g;
+
+
+    var string2='<div class="尽量降低身份">Chapter 1 - {{1}}介绍正则表达{{2}}式</div><div>123</div>{{3}}';
+    var reg2=/<div[^\/div]+\/div>/g;
+
+    console.log(string2.match(reg2))
+
     function PrototypeF() {
         this.jn = '???';
         this.dj = '???';
+        this.fj=[];
         this.show = function () {
-            console.log(this.name + '的年龄：' + this.age + '岁:技能等级:' + this.jn, this.dj + '级')
+            console.log(this.name + '的年龄：' + this.age + '岁:技能等级:' + this.jn, this.dj + '级 附加属性：'+this.fj)
         }
     }
     function Animal(name, age) {
+        // PrototypeF.apply(this)
         this.name = name;
         this.age = age;
         this.change=function(){
-            this.jn=this.jn;
-            this.dj='8888';
+            this.fj=[('精神境界 （初级）')];
+            this.dj = '123';
         }
-        // PrototypeF.call(this)
+
     }
 
     Animal.prototype = new PrototypeF()

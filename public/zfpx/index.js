@@ -133,3 +133,4 @@ Watcher.prototype.update = function () {
 // var d = "a的值：{{a.aa}}{{a.aa}}";
 // var patt = /\{\{[^\}\}]+\}\}/g;
 // console.log(d.match(patt))
+

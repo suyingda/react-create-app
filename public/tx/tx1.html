@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tx1</title>
+    <style>
+
+
+        div {
+
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+
+        /*  #item {
+              width: 0;
+              height: 0;
+              !*border-left: 111px solid transparent;*!
+              border-right: 111px solid transparent;
+              !*border-top: 10px solid transparent;*!
+              border-bottom: 50px solid red;
+              background: white;
+          }*/
+    </style>
+</head>
+<body>
+<div>123213</div>
+<!--行内绑定：脚本模型
+<button onclick="javascrpt:console.log('Hello')">Hello1</button>
+&lt;!&ndash;内联模型&ndash;&gt;
+<button onclick="showHello()">Hello2</button>
+&lt;!&ndash;动态绑定&ndash;&gt;
+<button id="btn3">Hello3</button>-->
+<script>
+    // let flag = 1;
+    // console.log = (function (log) {
+    //     return function (str) {
+    //         log.call(console, `${flag++}:${str}`);
+    //     }
+    // })(console.log);
+    let flag = 1;
+    console.log = (function (log) {
+        return function (v) {
+            log.call(console, `${flag++}:${v}`);
+        }
+    })(console.log)
+    console.log(1111)
+
+    /*
+        window.onerror = function (msg, fileUrl, lineNo, columnNo, error) {
+            console.log(msg, fileUrl, lineNo, columnNo, error, '报错')
+        }
+        throw('就是')*/
+
+
+    /*   function animal(name, age) {
+           this.name = name;
+           this.age = age;
+           this.show = function () {
+               console.log(this.name, this.age)
+           }
+       }
+
+       // 父类的原型对象属性
+       animal.prototype.id = 10;
+
+       function a(name, age) {
+           // animal.call(this,name,age)
+       }
+
+       a.prototype = new animal();
+       a.prototype.constructor = a;
+       var na = new a(1, 2);
+       na.id = 10000;
+       console.log(na.id)
+       console.log(na, new animal())*/
+
+
+    /*    console.time('a')
+        var array = Array(100);
+        array.fill('')
+        array.forEach((items, i) => {
+            array.fill(i, i, i + 1)
+        })
+        console.log(array)
+        console.timeEnd('a')
+        console.time('b');
+        var array2 = Array(100).join(' ').split(' ');
+        array2 = array2.map((items2, ii) => {
+            return ii
+        })
+        console.log(array2)
+        console.timeEnd('b')*/
+    // var ul = document.createElement('ul');
+    // var lis = '';
+    // for (var i = 0; i < 5; i++) {
+    //     lis += '<li>' + i + '</li>'
+    // }
+    // ul.innerHTML = lis;
+    // document.querySelector('body').appendChild(ul)
+
+
+</script>
+</body>
+</html>
