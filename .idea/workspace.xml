@@ -57,7 +57,11 @@
         <entry file="file://$PROJECT_DIR$/1.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
+<<<<<<< HEAD
               <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+=======
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+>>>>>>> f1965edee812bb00214c07c7103b9a8c41104cb2
             </state>
           </provider>
         </entry>
@@ -336,12 +340,16 @@
       <workItem from="1548053209248" duration="6592000" />
       <workItem from="1548395567863" duration="16606000" />
       <workItem from="1550104535900" duration="42209000" />
-      <workItem from="1550481876311" duration="370000" />
+      <workItem from="1550481876311" duration="470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="154024000" />
+=======
+    <option name="totallyTimeSpent" value="154045000" />
+>>>>>>> f1965edee812bb00214c07c7103b9a8c41104cb2
   </component>
   <component name="ToolWindowManager">
     <frame x="21" y="25" width="1867" height="1016" extended-state="0" />
@@ -633,7 +641,11 @@
     <entry file="file://$PROJECT_DIR$/1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
+<<<<<<< HEAD
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+=======
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+>>>>>>> f1965edee812bb00214c07c7103b9a8c41104cb2
         </state>
       </provider>
     </entry>
