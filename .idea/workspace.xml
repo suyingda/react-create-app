@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="327e21cd-e9ce-4be1-a7e5-3dcaabe8dac2" name="Default" comment="k">
       <change afterPath="$PROJECT_DIR$/public/constructor/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tx/fangdou.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -46,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/tx/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
@@ -55,16 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fangdou.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/tx/fangdou.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-191">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/constructor/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
@@ -336,12 +326,12 @@
       <workItem from="1548032503022" duration="14281000" />
       <workItem from="1548053209248" duration="6592000" />
       <workItem from="1548395567863" duration="16606000" />
-      <workItem from="1550104535900" duration="41528000" />
+      <workItem from="1550104535900" duration="42209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152894000" />
+    <option name="totallyTimeSpent" value="153575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="21" y="25" width="1867" height="1016" extended-state="0" />
@@ -642,24 +632,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/tx/index.html">
+    <entry file="file://$PROJECT_DIR$/public/constructor/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="370">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/tx/fangdou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="271">
+          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/constructor/index.html">
+    <entry file="file://$PROJECT_DIR$/public/tx/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="179">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
