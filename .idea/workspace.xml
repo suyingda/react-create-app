@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="327e21cd-e9ce-4be1-a7e5-3dcaabe8dac2" name="Default" comment="k">
-      <change afterPath="$PROJECT_DIR$/public/Proxy/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tx/tx1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tx/websocket.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/zfpx/newTarget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/constructor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tx/fangdou.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.client.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tx/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tx/index3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/zfpx/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/zfpx/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/zfpx/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -52,29 +46,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newTarget.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/zfpx/newTarget.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="websocket.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/tx/websocket.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/tx/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
+            <state relative-caret-position="179">
               <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fangdou.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/tx/fangdou.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-191">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/constructor/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -97,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.client.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webpack.client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/webpack.client.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
@@ -119,8 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>三方来看待世界法律肯定是佛教看</find>
-      <find>123213213</find>
       <find>上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉</find>
       <find>来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬将来肯定是激发了肯定撒激发来肯定是激发了肯打法决定是否辣椒粉登上了飞机了的萨芬</find>
       <find>data</find>
@@ -149,11 +141,14 @@
       <find>btn3</find>
       <find>console.log =</find>
       <find>unction (console</find>
+      <find>prototype</find>
+      <find>constructor</find>
     </findStrings>
     <dirStrings>
       <dir>D:\react-create-app\src</dir>
       <dir>D:\react-create-app\dist</dir>
       <dir>D:\react-create-app</dir>
+      <dir>D:\react-create-app\public</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -185,6 +180,8 @@
         <option value="$PROJECT_DIR$/public/Proxy/index.html" />
         <option value="$PROJECT_DIR$/public/tx/tx1.html" />
         <option value="$PROJECT_DIR$/config/webpack.client.js" />
+        <option value="$PROJECT_DIR$/public/tx/fangdou.html" />
+        <option value="$PROJECT_DIR$/public/constructor/index.html" />
       </list>
     </option>
   </component>
@@ -205,8 +202,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="50" />
+    <option name="x" value="21" />
+    <option name="y" value="25" />
     <option name="width" value="1867" />
     <option name="height" value="1016" />
   </component>
@@ -232,6 +229,12 @@
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-create-app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="constructor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-create-app" type="b2602c69:ProjectViewProjectNode" />
@@ -333,15 +336,15 @@
       <workItem from="1548032503022" duration="14281000" />
       <workItem from="1548053209248" duration="6592000" />
       <workItem from="1548395567863" duration="16606000" />
-      <workItem from="1550104535900" duration="31285000" />
+      <workItem from="1550104535900" duration="41528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142651000" />
+    <option name="totallyTimeSpent" value="152894000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="50" width="1867" height="1016" extended-state="0" />
+    <frame x="21" y="25" width="1867" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19253977" />
@@ -388,18 +391,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/zfpx/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -595,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/tx/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/zfpx/newTarget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -637,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/tx/tx1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
@@ -655,6 +632,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="32" column="31" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/tx1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tx/fangdou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/constructor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
