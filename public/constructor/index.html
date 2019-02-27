@@ -10,29 +10,43 @@
 <body>
 <script>
     console.time('s')
-    function a(){
-        console.log(1)
+
+    function a1() {
+        console.log('a1')
     }
+
+    function a2() {
+        console.log('a2')
+    }
+
     function Parent() {
-        this.Cs =[];
+        this.Cs = [];
     }
 
     Parent.prototype.Collect = function (func) {
-          this.Cs.push(func)
+        this.Cs.push(func)
     };
-
-    function Watcher(){
-        this.funcs
+    Parent.prototype.Notify = function () {
+        this.Cs.forEach((items) => {
+            console.log(items)
+            items.Update();
+        })
     }
-    Watcher.prototype.Update=function(){
 
+    function Observer(func) {
+        this.options = func;
     }
-    new Watcher(a)
 
-    console.log(p)
+    Observer.prototype.Update = function () {
+        this.options();
+    }
 
 
+    var sssss = new Parent();
+    sssss.Collect(new Observer(a1))
+    sssss.Collect(new Observer(a2))
 
+    sssss.Notify();
     console.timeEnd('s')
 </script>
 </body>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vjs</title>
+</head>
+<body>
+<script>
+
+
+   /* function Person() {
+        this.name = 'hanzichi';
+        this.age = 10;
+    }
+
+    Person.prototype.show = function() {
+        console.log(this.name);
+    };
+
+    Person.prototype.sex = 'male';
+
+    var a = {};  // 1
+    a.__proto__ = Person.prototype;  // 2
+    Person.call(a); // 3
+
+    console.log(a.sex); // male
+    a.show(); // hanzich*/
+
+  /*  var arr= [{code:'/1/'},{code:'/2/'},{code:'/1/'}]
+
+    console.log(arr.filter((code)=>{
+        console.log(code,'code')
+        return code.match(/1/)
+    }))*/
+
+
+    var str= 'a.';
+    var  reg= /^[1-9 | _ | .]+/;
+     if(reg.test(str)){
+         console.log(RegExp.$1,123)
+     }
+
+
+    var Vjs = new vjs({
+        data: {
+            a: 1,
+            c:1
+        }
+    });
+    function vjs({data}) {
+        this.$options = data;
+         for(var i in data){
+             this[i]=data[i]
+         }
+        /*Object.defineProperty(this.$options, 'a', {
+            // enumerable: true,
+            // configurable: true,
+            get: function () {
+                console.log('get data')
+                return newVal;
+            },
+            set: function (val) {
+                if (newVal === val) return;
+                console.log('update data')
+                newVal = val;
+
+            }
+        })*/
+       Dep(this.$options);
+        // console.log(data)
+    }
+
+    function Dep(data) {
+        var newVal = data.a;
+        Object.defineProperty(data, 'a', {
+            enumerable: true,
+            configurable: true,
+            get: function () {
+                console.log('get data')
+                return newVal;
+            },
+            set: function (val) {
+                if (val !== newVal) {
+                    console.log('update data')
+                    newVal = val;
+                }
+            }
+        })
+    }
+
+    /* var obj = {
+            b: 1
+        }
+        let abc= obj.b;
+        Object.defineProperty(obj, 'b', {
+            // enumerable: true,
+            // configurable: true,
+            get: function () {
+                console.log('get data')
+                return abc;
+            },
+            set: function (val) {
+                if (abc === val) return;
+                console.log('update data')
+                abc = val;
+
+            }
+        })*/
+    // Vjs.$options.data.a=2
+
+
+</script>
+
+</body>
+</html>

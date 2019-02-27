@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+   /* function Person() {
+        this.name = 'a1';
+        this.age = 10;
+    }
+    Person.prototype.sex = 'female';
+
+    var a = new Person();
+    Person.prototype = {
+        sex: 'a3333'
+    };
+    console.log(a);
+    console.log(a.sex);*/
+
+     function  proto(){ }
+    console.log({}.prototype,'x',{}.constructor,'y',{}.__proto__,'object')
+    console.log(function(){}.prototype,'x',function(){}.constructor,'y',function(){}.__proto__,'function')
+    console.log(new proto().prototype,'x',new proto().constructor,'new f',new proto().__proto__)
+
+    /* var t = null;
+
+     function shake(e) {
+         setTimeout(function (e) {
+             console.log(e.target)
+         }, 1000)
+     }
+
+     window.addEventListener('resize', shake(event))*/
+</script>
+</body>
+</html>
