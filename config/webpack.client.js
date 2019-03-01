@@ -18,8 +18,8 @@ const glob = require('glob');
 const clientConfig = {
     // target:'web',
     // devtool: "source-map", // 生产环境也可以设置，有点儿影响性能，但方便调试"
-    mode: 'development',
-    // mode: 'production',
+    // mode: 'development',
+    mode: 'production',
     // entry:'./src/client/index.js',
     /* entry: {
         app: ['webpack-hot-middleware/client?noInfo=true&reload=true', './src/client/index.js'],
@@ -28,10 +28,6 @@ const clientConfig = {
     entry: {
         // index: ['webpack-hot-middleware/client?noInfo=true&reload=true', path.resolve(__dirname, '../src/client/index.js')]
         app: [
-            'webpack-hot-middleware/client?noInfo=true&reload=true',
-            'babel-polyfill',
-            path.join(__dirname, '..', '/src/client/index.js')
-        ], app2: [
             'webpack-hot-middleware/client?noInfo=true&reload=true',
             'babel-polyfill',
             path.join(__dirname, '..', '/src/client/index.js')

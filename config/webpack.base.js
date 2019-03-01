@@ -3,7 +3,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const devMode = process.env.NODE_ENV !== 'production'
-console.log(devMode,'devModedevModedevModedevMode')
+// console.log(devMode,'devModedevModedevModedevMode')
 // const extractLess = new ExtractTextPlugin({
 //     filename: "[name].[contenthash].css",
 //     disable: process.env.NODE_ENV === "development"
@@ -55,7 +55,7 @@ module.exports = {
                     },
                     'less-loader'
                 ],
-
+                // exclude: [path.resolve(path.join(__dirname, '..'), 'node_modules/')],
             }
 
 
