@@ -124,7 +124,7 @@ export const request = function ({ methods = 'post', url, params = null }) {
         }).then(function (response) {
             // console.log(response, 'response');
 
-            return resolve(response)
+            return resolve(response || '')
         }).catch(function (error) {
             console.log(error, '未能拿到接口数据');
             return reject(error)

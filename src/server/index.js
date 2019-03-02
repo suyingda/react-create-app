@@ -16,42 +16,45 @@ import React from 'react';
 // import { RouteWithSubRoutes, routes } from "./../router/router";
 // app.use(express.static(DIST_DIR))
 app.use('/dist', express.static('dist'));//将文件设置成静态
-if (false) {
-    app.get('*', function (req, res) {
-        const App = renderToString((
-            <StaticRouter location={req.path} context={{}}>
-                <Switch>
-                    {routes.map((route, i) => <RouteWithSubRoutes key={i} excat={route.excat}   {...route} />)}
-                </Switch>
-            </StaticRouter>
-        ));
-        res.send(
-            `<!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <title>Server</title>
-            </head>
-            <body>
-                <div id="root">${App}</div>
-                <script src="/dist/client.js"></script>
-            </body>
-            </html>`
-        );
-    });
-}
-else {
+// if (false) {
+//     app.get('*', function (req, res) {
+//         const App = renderToString((
+//             <StaticRouter location={req.path} context={{}}>
+//                 <Switch>
+//                     {routes.map((route, i) => <RouteWithSubRoutes key={i} excat={route.excat}   {...route} />)}
+//                 </Switch>
+//             </StaticRouter>
+//         ));
+//         res.send(
+//             `<!DOCTYPE html>
+//             <html lang="en">
+//             <head>
+//                 <meta charset="UTF-8">
+//                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+//                 <title>Server</title>
+//             </head>
+//             <body>
+//                 <div id="root">${App}</div>
+//                 <script src="/dist/client.js"></script>
+//             </body>
+//             </html>`
+//         );
+//     });
+// }
+// else {
     var complier = webpack(ClientConfig);
     let devMiddleware = webpackDevMiddleware(complier, {
         publicPath: ClientConfig.output.publicPath,
+        // publicPath: ClientConfig.output.publicPath,
         quiet: true //向控制台显示任何内容 
     })
     let hotMiddleware = webpackHotMiddleware(complier, {
-        // log: false,
-        hot: true,
-        heartbeat: 2000,
+        // publicPath: ClientConfig.output.publicPath,
+         log: false,
+        // inline:true,
+        quiet: true,
+        // heartbeat: 2000,
         // stats: {
         //     assets: true,
         //     children: false,
@@ -61,6 +64,7 @@ else {
     })
     app.use(devMiddleware)
     app.use(hotMiddleware);
+    // app.use(express.static(DIST_DIR))
     app.get("*", (req, res, next) => {
         const filename = path.join(DIST_DIR, 'index.html');
         complier.outputFileSystem.readFile(filename, (err, result) => {
@@ -73,8 +77,8 @@ else {
         })
         // var host = req.headers.host, ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
         // console.log("client ip:" + ip + ", host:" + host);
-    })
-}
+     })
+// }
 const { configHttpProxy } = require('./Api/config');
 for (let proxyConfigkey in configHttpProxy) {
     try {

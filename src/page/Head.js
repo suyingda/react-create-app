@@ -7,6 +7,9 @@ import { connect } from "react-redux";
 
 import styles from './less/less.less';
 console.log(styles, 'less')
+
+ 
+
 // import PUB from '../module/ReduxHead'
 let timer1 = undefined;
 class Head extends Component {
@@ -39,7 +42,7 @@ class Head extends Component {
                             console.log(v)
                         })
                     }
-                }>1清楚1
+                }>6666
 
                 </div>
                 <a href="http://172.254.68.158:9000/custinfo/get_shareholder?custid=null&_='+(new Date()).getTime().toString()">adsf dsaf </a>
@@ -94,4 +97,6 @@ const mapStateToProps = ((state, props) => {
 })
 // const { aa, bb, cc } = PUB.actions;
 export default connect(mapStateToProps, mapDispatchToProps(['ReduxHead']))(Head);
+
+
 
