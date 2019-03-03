@@ -1,3 +1,4 @@
+
 {
   "name": "ssr",
   "version": "1.0.0",
@@ -10,7 +11,7 @@
     "s": "node   ./node_modules/babel-cli/bin/babel-node    ./src/server/ss.js",
     "build": "webpack --config ./config/webpack.server.js --mode production",
     "server": "webpack --config ./config/webpack.server.js",
-    "client": "webpack --config ./config/webpack.client.js --colors --profile --progress",
+    "client": "set NODE_ENV=production && webpack --config ./config/webpack.client.js ",
     "test": "node   ./node_modules/babel-cli/bin/babel-node    ./src/server/test.js"
   },
   "author": "",

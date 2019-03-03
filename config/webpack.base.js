@@ -26,9 +26,18 @@ module.exports = {
                              // plugins: ["transform-runtime", "add-module-exports"]
                              // plugins: ["transform-object-rest-spread"] // ...展开符号插件安装
                          } */
+                        /*    options:{
+                               presets:[
+                                   ['env',{modules:false}]
+                               ]
+                           }
+   */
                     },
+
                 ],
-                exclude: [path.resolve(path.join(__dirname, '..'), 'node_modules/')],
+                // include: path.resolve('./../src'),
+                exclude: /node_modules/
+                // exclude: [path.resolve(path.join(__dirname, '..'), 'node_modules/')],
                 // exclude: /node_modules/,
             },
             {
@@ -56,7 +65,18 @@ module.exports = {
                     'less-loader'
                 ],
                 // exclude: [path.resolve(path.join(__dirname, '..'), 'node_modules/')],
-            }
+            }, 
+           /*  {
+                test: /\.(pan|jpg|gif|svg|bmp|eot|woff|woff2|ttf)/,
+                loader: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 5 * 1024,
+                        //指定拷贝文件的输出目录
+                        outputPath: 'images/'
+                    }
+                }
+            } */
 
 
         ],

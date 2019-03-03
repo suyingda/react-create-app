@@ -15,6 +15,8 @@ const devMode = process.env.NODE_ENV !== 'production'
 
 const pathName = path.join(__dirname, '..');
 const glob = require('glob');
+
+console.log(process.env.NODE_ENV,'环境变量')
 const clientConfig = {
     // target:'web',
     // devtool: "source-map", // 生产环境也可以设置，有点儿影响性能，但方便调试"

@@ -42,7 +42,7 @@ class Head extends Component {
                             console.log(v)
                         })
                     }
-                }>6666
+                }>666666666
 
                 </div>
                 <a href="http://172.254.68.158:9000/custinfo/get_shareholder?custid=null&_='+(new Date()).getTime().toString()">adsf dsaf </a>

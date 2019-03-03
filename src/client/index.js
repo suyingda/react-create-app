@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Link } from 'react-router-dom';
 import { RouteWithSubRoutes, routes, newRouter } from "../router/router";
  
+import {eeeeeeeeeeeee} from './base'
+eeeeeeeeeeeee();
 /**
  * redux
  */
