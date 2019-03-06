@@ -1,8 +1,10 @@
 const path = require('path');
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin'); //抛弃 wb4
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== 'production'
+const devMode = (process.env.NODE_ENV !== 'production');
+
+
 // console.log(devMode,'devModedevModedevModedevMode')
 // const extractLess = new ExtractTextPlugin({
 //     filename: "[name].[contenthash].css",

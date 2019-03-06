@@ -10,14 +10,14 @@ var server =http.createServer(function(req,res){
 
 server.listen(8001)*/
 var http = require('http');
-var fs   = require('fs');//引入文件读取模块
+var fs = require('fs');//引入文件读取模块
 const express = require('express');
- 
+
 const app = express();
 const path = require('path');
 var documentRoot = './dist';
- 
 
+app.use(express.static(path.join(__dirname, '../../dist')));
 
 var server = http.createServer(function (req, res) {
 
@@ -39,7 +39,8 @@ var server = http.createServer(function (req, res) {
         */
         if (err) {
             // console.log(err,'error!进入服务端请求')
-            fs.readFile('./dist/index.html', function (err, data) {console.log(file,'文件路径')
+            fs.readFile('./dist/index.html', 'utf-8',function (err, data) {
+                console.log(file, '文件路径')
                 if (err) {
                     res.writeHeader(404, {
                         'content-type': 'text/html;charset="utf-8"',
@@ -54,17 +55,27 @@ var server = http.createServer(function (req, res) {
                     res.end();
                 }
             });
-          /*  res.writeHeader(404, {
-                'content-type': 'text/html;charset="utf-8"',
-            });
-            res.write('<h1>404错误</h1><p>你要找的页面不存在</p>');
-            res.end();*/
+            /*  res.writeHeader(404, {
+                  'content-type': 'text/html;charset="utf-8"',
+              });
+              res.write('<h1>404错误</h1><p>你要找的页面不存在</p>');
+              res.end();*/
         } else {
+
+            // res.writeHead(200, {'Content-type': `${'text/html'};chartset=utf-8`});
+            res.writeHead(666, {'Content-type': 'text/plain'});
+            console.log('status : 200');
+            res.write(data);
+            res.end();
+
+/*
             res.writeHeader(200, {
+                // 'content-type' : "text/event-stream"
                 // 'content-type': 'text/html;charset="utf-8"',
+
             });
             res.write(data);//将index.html显示在客户端
-            res.end();
+            res.end();*/
 
         }
 
@@ -73,4 +84,3 @@ var server = http.createServer(function (req, res) {
 }).listen(1001);
 
 
- 

@@ -1,8 +1,8 @@
 
 
-import callApi from './callApi'
-callApi(`/randomID/`, {}, 'GET')
-callApi(`/getAllDictItem/`, {}, 'GET')
+// import callApi from './callApi'
+// callApi(`/randomID/`, {}, 'GET')
+// callApi(`/getAllDictItem/`, {}, 'GET')
 
 
 
