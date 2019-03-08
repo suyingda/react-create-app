@@ -67,7 +67,20 @@ module.exports = {
                     'less-loader'
                 ],
                 // exclude: [path.resolve(path.join(__dirname, '..'), 'node_modules/')],
-            }, 
+            },
+            {//antd样式处理
+                test: /\.(less|css)/,
+                exclude: /src/,
+                use: [
+                    {loader: "style-loader",},
+                    {
+                        loader: "css-loader",
+                        options: {
+                            importLoaders: 1
+                        }
+                    }
+                ]
+            },
            /*  {
                 test: /\.(pan|jpg|gif|svg|bmp|eot|woff|woff2|ttf)/,
                 loader: {

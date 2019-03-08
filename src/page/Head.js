@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 import styles from './less/less.less';
 console.log(styles, 'less')
 
- 
+import { Button,Input } from 'antd';
 
 // import PUB from '../module/ReduxHead'
 let timer1 = undefined;
@@ -33,6 +33,8 @@ class Head extends Component {
         console.log(this.props, "head")
         return (
             <div className={styles.lessClass} >
+                <Button type="primary">Primary</Button>
+                <Input size="large" placeholder="large size" />
                 {/* <div> */}
                 <div className={styles.lessChrilen} onClick={
                     // <h1  onClick={

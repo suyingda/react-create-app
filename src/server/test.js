@@ -61,21 +61,13 @@ var server = http.createServer(function (req, res) {
               res.write('<h1>404错误</h1><p>你要找的页面不存在</p>');
               res.end();*/
         } else {
-
             // res.writeHead(200, {'Content-type': `${'text/html'};chartset=utf-8`});
-            res.writeHead(666, {'Content-type': 'text/plain'});
-            console.log('status : 200');
-            res.write(data);
-            res.end();
-
-/*
             res.writeHeader(200, {
                 // 'content-type' : "text/event-stream"
                 // 'content-type': 'text/html;charset="utf-8"',
-
             });
             res.write(data);//将index.html显示在客户端
-            res.end();*/
+            res.end();
 
         }
 

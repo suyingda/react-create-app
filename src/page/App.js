@@ -4,13 +4,14 @@ import { Link, BrowserRouter, Route, Switch } from "react-router-dom";
     window.open('/head?id=1231')
 }} */
 
-
+import { Button } from 'antd';
 import styles from './css/App.css';
 console.log(styles, 'css')
 class App extends Component {
     render() {
         return (
             <div className={styles.classNamea}  >
+                <Button type="primary">Primary</Button>
                 <div className={styles.classNamea1}>123</div>
                 <Link to="/head">t0 go head</Link>
             </div>
