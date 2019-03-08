@@ -20,8 +20,12 @@ class Head extends Component {
             // showComponent: this.props.match.path
         }
     }
+    static getDerivedStateFromProps(props, state){
+        console.log(props,state,'getDerivedStateFromProps');
+        return true;
+    }
     componentDidMount() {
-        console.log(this.props)
+        console.log(this.props,'componentDidMount')
         // timer1 = setInterval(() => {
         //     console.log(1)
         // }, 1555)
