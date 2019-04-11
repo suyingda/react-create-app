@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function a() {
+            var arr = [0, 1];
+            var num = arr.length;
+            var brr = [];
+            for (var i = 0; i < num; i++) {
+                var temp = parseInt(Math.random() * (num - i));
+                brr.push(arr[temp]);
+                arr.splice(temp, 1);
+            }
+            return brr[0]
+        }
+        var lzr = ['z', 'j', 'r'];
+        var wt = ['iz', 'ij', 'ir'];
+        var wt_f = wt.length;
+
+        var res = {};
+        let slsm = undefined;
+        let slsm2 = undefined;
+        for (var i = 0; i < lzr.length; i++) {
+            if (wt_f) {
+                res[lzr[i]] = []
+                for (var j = 0; j < wt.length; j++) {
+                    if (slsm === undefined) {
+                        res[lzr[i]].push({ [wt[j]]: a() });
+                    } else {
+                        if (slsm) {
+                            res[lzr[i]].push({ [wt[1]]: 0 });
+                            res[lzr[i]].push({ [wt[2]]: 0 });
+                            wt_f=0;
+                        } else {
+                            res[lzr[i]].push({ [wt[j]]: a() });
+                            slsm2 = a();
+
+                        }
+
+                    }
+                    slsm = a();
+                    wt_f--;
+                }
+            }
+
+        }
+
+        console.log('最终输出：', res, wt_f);
+
+        /*  var count = 0;
+         var count2 = 0;
+         function a() {
+             var arr = [1,2];
+             var num = arr.length;
+             var brr = [];
+             for (var i = 0; i < num; i++) {
+                 var temp = parseInt(Math.random() * (num - i));
+                 brr.push(arr[temp]);
+                 arr.splice(temp, 1);
+             }
+             if (brr[0] === 1) {
+                 count2++;
+             }
+             // console.log(brr)
+         }
+         for (var i = 0; i < 1000; i++) {
+             count++;
+             a();
+         }
+         console.log(count2 / count * 100 + '%'); */
+
+    </script>
+</body>
+
+</html>
