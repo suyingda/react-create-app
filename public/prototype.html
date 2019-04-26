@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    console.log(typeof Arra.prototype)
+
+/*     Object.prototype.a = 'a';
+     Function.prototype.a = 'a1';
+     function Person(){};
+     var yideng = new Person();
+     console.log('p.a:'+yideng.a);
+     console.log(Person.prototype.__proto__.constructor.constructor)
+     console.log(yideng.__proto__.__proto__ === Object.prototype);
+     console.log( Object.prototype.constructor);
+     console.log(yideng.__proto__.__proto__.constructor.constructor.constructor.constructor);*/
+     // Object.prototype  Function.prototype
+    /*     function Parent() {
+                            this.a = 1;
+                            this.b = [1, 2, this.a];
+                            this.c = {
+                                demo: 5
+                            };
+                            this.show = function() {
+                                console.log(this.a, this.b, this.c.demo);
+                            }
+                        }
+
+                        function Child() {
+                            this.a = 2;
+                            this.change = function() {
+                                this.b.push(this.a);
+                                this.a = this.b.length;
+                                this.c.demo = this.a++;
+                            }
+                        }
+                        Child.prototype = new Parent();
+                        var parent = new Parent();
+                        var child1 = new Child();
+                        var child2 = new Child();
+
+                        child1.a = 11;
+                        child2.a = 12;
+
+                        parent.show(); //1  [1,2,1] 5
+                        child1.show(); //  11 [1,2,1] 5
+                        child2.show(); //12 [1,2,1] 5
+                        child1.change(); //5 [1,2,1,11]   4
+                        child2.change(); //6  [1,2,1,11,12]   5
+                        parent.show();
+                        child1.show(); //5  [1,2,1,11,12]  5
+                        child2.show(); //6  [1,2,1,11,12]  5 */
+
+
+    /*  function SuperType(name, age) {
+         this.age = age;
+         this.name = name; //实例属性使用借用构造函数模式　　　　　　　　　　　　　　 this.age=age;//实例属性使用借用构造函数模式
+         this.colors = ["red", "blue", "green"]; //这个数组虽然会同时被原型链和借用构造函数添加使用，但最后根据原型链的搜索机制，是按照借用构造函数模式实现的。
+     }
+     SuperType.prototype.sayName = function() {
+         console.log(this.name, this.age); //实现同样效果的方法使用原型链模式
+     };
+
+     function SubType(name, age) {
+         SuperType.call(this, name, age); //借用构造函数模式的有点就是可以向子类型构造函数中的超类型构造函数传递参数，这里this的用法很重要
+
+     };
+     SubType.prototype = new SuperType(); //使用SuperType的实例来替换为SubType的原型对象
+     SubType.prototype.constructor = SubType; // 这句代码即将SubType的原型对象的constructor属性指向SubType，但这一句去掉也不会影响结果。
+     SubType.prototype.sayAge = function() {
+         console.log(this.age); //在原型对象中定义方法，可以使得该方法实现复用，增强性能
+     };
+     var instance1 = new SubType("zzw", 21);
+     instance1.colors.push("black");
+     console.log(instance1.colors); //["red", "blue", "green", "black"]
+     instance1.sayName(); //zzw
+     instance1.sayAge(); //21
+     var instance2 = new SubType("ht", 18);
+     console.log(instance2.colors); //["red", "blue", "green"]
+     instance2.sayName(); //ht
+     instance2.sayAge(); //18 */
+    /*   function SuperType() {
+          this.property = true;
+      }
+      SuperType.prototype.getSuperValue = function() {
+          return this.property;
+      };
+
+      function SubType() {
+          this.subproperty = false;
+      }
+      SubType.prototype.getSuperValue2 = function() {
+          return false; //这时在子类型添加的超类型的同名方法，用于覆盖超类型中的方法，因此，最后反悔了false
+      }
+      SubType.prototype = new SuperType(); //这一句代码即为替换的原型的语句
+      SubType.prototype.constructor = SubType
+
+
+      var instance = new SubType();
+      console.log(instance.getSuperValue2()); //false */
+</script>
+</body>
+
+</html>

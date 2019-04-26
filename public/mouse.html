@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    /*    function random(val) {
+                                                                                                                                                                                                                                                                                                                                                                                           var len = val.length;
+                                                                                                                                                                                                                                                                                                                                                                                           var newArr = [];
+                                                                                                                                                                                                                                                                                                                                                                                           var valval = val;
+                                                                                                                                                                                                                                                                                                                                                                                           for (var i = 0; i < len; i++) {
+                                                                                                                                                                                                                                                                                                                                                                                               const str = parseInt(Math.random() * (len - i));
+                                                                                                                                                                                                                                                                                                                                                                                               newArr.push(valval[str]);
+                                                                                                                                                                                                                                                                                                                                                                                               valval.splice(str, 1);
+                                                                                                                                                                                                                                                                                                                                                                                           }
+                                                                                                                                                                                                                                                                                                                                                                                           return newArr[0] + '有毒';
+                                                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                                                       var arr = new Array(100);
+                                                                                                                                                                                                                                                                                                                                                                                       var obj = [];
+                                                                                                                                                                                                                                                                                                                                                                                       for (var i = 0; i < 100; i++) {
+                                                                                                                                                                                                                                                                                                                                                                                           obj.push(i + 1)
+                                                                                                                                                                                                                                                                                                                                                                                           arr.fill(i + 1, i, i + 1);
+                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                       const result = random(arr);
+                                                                                                                                                                                                                                                                                                                                                                                       let res = 0;
+                                                                                                                                                                                                                                                                                                                                                                                       if (result.substr(0, 2) - 1 > 0) {
+                                                                                                                                                                                                                                                                                                                                                                                           res = (result.substr(0, 2)) - 1
+                                                                                                                                                                                                                                                                                                                                                                                       } else {
+                                                                                                                                                                                                                                                                                                                                                                                           res = (result.substr(0, 1)) - 1
+                                                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                                                       obj[res] = result;
+                                                                                                                                                                                                                                                                                                                                                                                       console.log(obj);
+
+                                                                                                                                                                                                                                                                                                                                                                                       var arr1 = new Array(100);
+
+                                                                                                                                                                                                                                                                                                                                                                                       for (var i = 0; i < 100; i++) {
+
+                                                                                                                                                                                                                                                                                                                                                                                           arr1.fill(i + 1 + 'TEST', i, i + 1);
+                                                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                                                       console.log(arr1);
+
+                                                                                                                                                                                                                                                                                                                                                                                       var objectData = {
+
+                                                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0]] = obj[0];
+
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[1]] = obj[1];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0] + arr1[1]] = obj[2];
+
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[2]] = obj[3];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0] + arr1[2]] = obj[4];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[1] + arr1[2]] = obj[5];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0] + arr1[1] + arr1[2]] = obj[6];
+
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[3]] = obj[7];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0] + arr1[3]] = obj[8];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[1] + arr1[3]] = obj[12];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[2] + arr1[3]] = obj[13];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0] + arr1[2] + arr1[3]] = obj[8];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0] + arr1[1] + arr1[3]] = obj[9];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[0] + arr1[1] + arr1[2] + arr1[3]] = obj[10];
+                                                                                                                                                                                                                                                                                                                                                                                       objectData[arr1[1] + arr1[2] + arr1[3]] = obj[11];
+                                                                                                                                                                                                                                                                                                                                                                                       var arrayA = []
+                                                                                                                                                                                                                                                                                                                                                                                       for (var i = 0; i < arr1.length; i++) {
+                                                                                                                                                                                                                                                                                                                                                                                           arrayA.push(arrayA);
+                                                                                                                                                                                                                                                                                                                                                                                           arrayA.forEach((items, i) => {
+                                                                                                                                                                                                                                                                                                                                                                                               objectData[arr1[i]] = obj[i];
+                                                                                                                                                                                                                                                                                                                                                                                           })
+
+                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                       console.log(objectData, 'result data'); */
+    /*
+            function permute(temArr, testArr) {
+                var permuteArr = [];
+                var arr = testArr;
+                function innerPermute(temArr) {
+                    for (var i = 0; i < arr.length; i++) {
+                        if (temArr.length == arr.length - 1) {
+                            if (!temArr.includes(arr[i])) {
+                                permuteArr.push(temArr.concat(arr[i]));
+                            }
+                            // continue;
+                        }
+                        if (!temArr.includes(arr[i])) {
+                            innerPermute(temArr.concat(arr[i]));
+                        }
+                    }
+                }
+                innerPermute(temArr);
+                return permuteArr;
+            }
+
+
+            console.time('permute');
+
+
+            console.dir(permute([], [1, 2, 3]));
+
+            console.timeEnd('permute');
+     */
+
+    var data = ['a', 'b'];
+
+    function getGroup(data, index = 0, group = []) {
+        var need_apply = []; //先命名空数组
+        need_apply.push(data[index]); //默认第一个数据加入
+        for (var i = 0; i < group.length; i++) {
+            need_apply.push(group[i] + data[index]);
+        }
+        group.push.apply(group, need_apply);
+        // group.concat(need_apply);
+        if (index + 1 >= data.length) { //检测导入数据是否只有一个
+            return group;
+        } else {
+            return getGroup(data, index + 1, group);
+        }
+    }
+
+    console.log(getGroup(data));
+
+    /*  var data = [1, 2];
+     var newData = [];
+     var count = 0;
+     var arrayData = [];
+     function a(x) {
+         count++;
+         if (count > 100) return true;
+         for (var i = 0; i < data.length; i++) {
+
+             if (!newData.includes(newData[i])) {
+                 newData.push(data[i]);
+             }
+             a(newData);
+         }
+     }
+     a();
+     console.log(newData[i]) */
+</script>
+
+</body>
+
+</htm

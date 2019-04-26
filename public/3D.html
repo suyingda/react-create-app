@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 800px;
+            transform-style: preserve-3d;
+        }
+
+        #box {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            position: relative; 
+            /* //相对body定位 */
+            transition: 2s; 
+            /* //运动时间 */
+        }
+
+        #box:hover {
+            transform: rotateY(180deg);
+            /* //当鼠标移动到上面时让他旋转180° */
+        }
+
+        #box .bian {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 100px;
+            position: absolute;
+            /* //.mian相对与#box绝对定位 */
+        }
+
+        .zhi1 {
+            background-color: red;
+            transform: rotateY(180deg);
+        }
+
+        .zhi2 {
+            background-color: yellow;
+            backface-visibility: hidden;
+            /* //设置后面的可适度为看不见 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="bian zhi1"><img
+                src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=875174056,2653625984&fm=58&bpow=1000&bpoh=1200"
+                alt=""></div>
+        <div class="bian zhi2"><img
+                src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3312543479,2840924628&fm=58&bpow=590&bpoh=563"
+                alt=""></div>
+    </div>
+</body>
+
+</html>

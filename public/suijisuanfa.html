@@ -10,8 +10,10 @@
 
 <body>
     <script>
-        function a() {
-            var arr = [0, 1];
+        var ccc = 0;
+        var ccc2 = 0;
+        function $random() {
+            var arr = [1, 2, 3, 4];
             var num = arr.length;
             var brr = [];
             for (var i = 0; i < num; i++) {
@@ -19,42 +21,78 @@
                 brr.push(arr[temp]);
                 arr.splice(temp, 1);
             }
-            return brr[0]
+            // console.log(brr)
+            if (brr[0] === 1) {
+                ccc++
+            }
         }
-        var lzr = ['z', 'j', 'r'];
-        var wt = ['iz', 'ij', 'ir'];
-        var wt_f = wt.length;
 
-        var res = {};
-        let slsm = undefined;
-        let slsm2 = undefined;
-        for (var i = 0; i < lzr.length; i++) {
-            if (wt_f) {
-                res[lzr[i]] = []
-                for (var j = 0; j < wt.length; j++) {
-                    if (slsm === undefined) {
-                        res[lzr[i]].push({ [wt[j]]: a() });
-                    } else {
-                        if (slsm) {
-                            res[lzr[i]].push({ [wt[1]]: 0 });
-                            res[lzr[i]].push({ [wt[2]]: 0 });
-                            wt_f=0;
-                        } else {
-                            res[lzr[i]].push({ [wt[j]]: a() });
-                            slsm2 = a();
+        for (var i = 0; i < 1000; i++) {
+            ccc2++
+            $random()
+        }
+        console.log((ccc / ccc2) * 100 + '%')
+        /*      var lzr = ['z', 'j', 'r'];
+           var wt = ['iz', 'ij', 'ir'];
+           var wt_f = wt.length;
+   
+           var res = {};
+           let slsm = undefined;
+           var current = [];
+           for (var i = 0; i < lzr.length; i++) {
+               if (wt_f > -1) {
+                   res[lzr[i]] = []
+                   for (var j = 0; j < wt.length; j++) {
+                       if (wt_f > -1) {
+                           if (slsm === undefined) {
+                               slsm = $random();
+                               res[lzr[i]].push({ [wt[j]]: slsm });
+                               // slsm && console.log(slsm, 'test occurs {z:1}')
+                           } else {
+                               if (slsm) {
+                                   res[lzr[i]].push({ [wt[j]]: 0 });
+                                   res[lzr[i]].push({ [wt[j + 1]]: 0 });
+                                   wt_f = -1;
+                               } else {
+                                   let aa = $random();
+                                   res[lzr[i]].push({ [wt[j]]: aa });
+                                   if (aa) {
+                                       res[lzr[i]].push({ [wt[j + 1]]: 0 });
+                                   } else {
+                                       res[lzr[i]].push({ [wt[j + 1]]: 1 });
+                                   }
+                                   wt_f = -1;
+                               }
+   
+                           }
+                           wt_f--;
+                       }
+                   }
+               }
+   
+           }
+   
+           console.log('最终输出：', res, JSON.stringify(res.z));
+           console.log('数据收集', current);
+    */
 
-                        }
+        var array = ['z', 'j', 'r'];
+        var wt = ['iz', 'ij', 'jr'];
+        var current = []
+        cl_a = array[1]
+        cl_wt = wt[1];
+        current.push('y');
+        current.push('y');
+        if (current[0] === current[1]) {
+            console.error('said same answer,Both are true or Both are false');
+        } else {
+            console.error('said not same answer,There is one that is true');
+            if (current[0]) {
 
-                    }
-                    slsm = a();
-                    wt_f--;
-                }
             }
 
         }
-
-        console.log('最终输出：', res, wt_f);
-
+        console.log(JSON.stringify(current));
         /*  var count = 0;
          var count2 = 0;
          function a() {

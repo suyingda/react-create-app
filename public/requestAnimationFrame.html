@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>requestAnimationFrame</title>
+</head>
+
+<body>
+    <script>
+        var count = 0;
+        function draw() {
+            console.log(1)
+            count++;
+
+        }
+        var fps = 30;
+        function tick() {
+            setTimeout(function () {
+                 (count < 100) && requestAnimationFrame(tick);
+                draw(); // ... Code for Drawing the Frame ...
+            }, 10);
+        }
+        tick();
+    </script>
+</body>
+
+</html>

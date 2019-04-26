@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ceshi</title>
+    <style>
+        .test h3 {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background: green;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<body>
+<script>
+    $.ajax({
+        type: "post",
+        // async:false,
+        // dataType: "json",
+        url: "https://99900013.valueonline.cn/sso/oauthagency/getToken",
+        data: {
+            userName: "zszqsso",
+            passWd: "98d784259ad74287b17b91a338c646cd"
+        },
+        cache: false,
+        contentType: false,
+        contentType:"application/x-www-form-urlencoded",
+        // beforeSend:function(jqXHR,options){
+            // jqXHR.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8") ;  // 增加一个自定义请求头
+
+        // },
+
+
+
+        // jsonp: "callbackparam",//服务端用于接收callback调用的function名的参数
+        // jsonpCallback:"success_jsonpCallback",//callback的function名称
+
+        success: function (response) {
+            let res = response
+            console.log(res,'success',res.result);
+        },
+        error: function (e) {
+            console.log('fail', e);
+        }
+    });
+</script>
+<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+
+</html>

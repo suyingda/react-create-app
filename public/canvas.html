@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>ceshi</title>
-    <style>
-        .test h3 {
-            width: 100px;
-            height: 100px;
-            text-align: center;
-            background: green;
-            line-height: 100px;
-        }
-    </style>
+    <title>信息</title>
 </head>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
 <body>
-<script>
-    $.ajax({
-        type: "post",
-        // async:false,
-        // dataType: "json",
-        url: "https://99900013.valueonline.cn/sso/oauthagency/getToken",
-        data: {
-            userName: "zszqsso",
-            passWd: "98d784259ad74287b17b91a338c646cd"
-        },
-        cache: false,
-        contentType: false,
-        contentType:"application/x-www-form-urlencoded",
-        // beforeSend:function(jqXHR,options){
-            // jqXHR.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8") ;  // 增加一个自定义请求头
+    <div id="container">
+        <canvas id="cavsElem">
+            你的浏览器不支持canvas，请升级浏览器
+        </canvas>
+    </div>
+    <script>
 
-        // },
+        var c = document.getElementById("cavsElem");
+        var ctx = c.getContext("2d");//图画绘制对象
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect(10, 10, 55, 50);
+        ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+        ctx.fillRect(30, 30, 55, 50);
+        /*      //圆弧
+             ctx.save();
+             ctx.translate(100, 100);
+             ctx.arc(0, 0, 100, 0, 30 * Math.PI / 180);
+             ctx.restore();
+             //第一条线
+             ctx.save();
+             ctx.moveTo(100, 100);
+             ctx.lineTo(200, 100);
+             ctx.restore();
+             //第二条线
+             ctx.save();
+             ctx.translate(100, 100);
+             ctx.moveTo(0, 0);
+             ctx.rotate(30 * Math.PI / 180);
+             ctx.lineTo(100, 0);
+             ctx.stroke();
+             ctx.restore();  */
 
 
-
-        // jsonp: "callbackparam",//服务端用于接收callback调用的function名的参数
-        // jsonpCallback:"success_jsonpCallback",//callback的function名称
-
-        success: function (response) {
-            let res = response
-            console.log(res,'success',res.result);
-        },
-        error: function (e) {
-            console.log('fail', e);
-        }
-    });
-</script>
-<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+    </script>
+</body>
 
 </html>

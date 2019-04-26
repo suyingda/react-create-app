@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var count = 0;
+        function a(count) {
+            var div1 = document.createElement('span');
+            div1.style.position = 'absolute'
+            div1.style.left = count + parseInt(Math.random() * 500) + 'px';
+            div1.style.top = count + parseInt(Math.random() * 500) + 'px';
+            div1.innerHTML += '.';
+            document.body.appendChild(div1);
+        }
+
+        var t = setInterval(() => {
+            count++;
+            a(count);
+            if (count > 100) {
+                clearInterval(t)
+            }
+        }, 10); 
+    </script>
+</body>
+
+</html>
