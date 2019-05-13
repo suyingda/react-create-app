@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var saveArrayData = [];
+    for (var i = 0; i < 10; i++) {
+        var NumStr = null;
+        NumStr = parseInt(Math.random() * 1000)
+        saveArrayData.push(NumStr)
+    }
+    console.log(saveArrayData)
+    var dengji = [];
+    for (var i = 0; i < saveArrayData.length; i++) {
+        if (!dengji[parseInt(saveArrayData[i] / 10)]) {
+            dengji[parseInt(saveArrayData[i] / 10)] = [];
+        }
+        dengji[parseInt(saveArrayData[i] / 10)].push(saveArrayData[i])
+    }
+    console.table(dengji, 'get data');
+    var count = 0;
+
+    function random(arr) {
+        let oldArr = arr;
+        let arrLen = arr.length;
+        let newArr = [];
+        for (var i = 0; i < 2; i++) {
+            let num = parseInt(Math.random() * (2 - i))
+            newArr.push(oldArr[num])
+            oldArr.splice(num, 1)
+        }
+        if (newArr[0] === 1) {
+            count++;
+        }
+    }
+
+    for (var ii = 0; ii < 100000; ii++) {
+        random([1, 2]);
+    }
+    console.log(count / 100000)
+</script>
+</body>
+</html>

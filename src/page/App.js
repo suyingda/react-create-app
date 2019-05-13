@@ -14,6 +14,7 @@ class App extends Component {
                 <Button type="primary">Primary</Button>
                 <div className={styles.classNamea1}>123</div>
                 <Link to="/head">t0 go head</Link>
+                <Link to="/lifecycle">lifecycle  </Link>
             </div>
         );
     }

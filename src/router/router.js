@@ -11,13 +11,13 @@ export default (
     </div>
 ) */
 
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { Base64 } from 'js-base64';
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import {Base64} from 'js-base64';
 // import { Redirect } from 'react-router'
 // import { Base64 } from 'js-base64';
 
-import { ModuleReduxThunk } from './../module/collect'
+import {ModuleReduxThunk} from './../module/collect'
 
 import App from '../page/App'
 
@@ -27,11 +27,12 @@ import App from '../page/App'
 // import _Head2 from '../page/Header/Header2/Head2';
 // import _Head3 from '../page/Header/Header2/Header3/Head3';
 // import _Head4 from '../page/Header/Header2/Header3/Head4';
- 
+
 import withLoadable from './Loadable'
 
-const A = withLoadable(() => import('../page/A'));  
+const A = withLoadable(() => import('../page/A'));
 const Head = withLoadable(() => import('../page/Head'));
+const Lifecycle = withLoadable(() => import('../page/Lifecycle'));
 const Head1 = withLoadable(() => import('../page/Header/Head1'));
 const Head2 = withLoadable(() => import('../page/Header/Header2/Head2'));
 const Head3 = withLoadable(() => import('../page/Header/Header2/header3/Head3'));
@@ -44,7 +45,7 @@ for (let i in ArrayComponent) {
 } */
 
 
-const Not = () => <h2>Not</h2>;
+const Not = () => <h2>Not Page</h2>;
 export const routes = [
     {
         path: '/',
@@ -54,6 +55,10 @@ export const routes = [
     {
         path: '/home',
         component: A,
+    },
+    {
+        path: '/lifecycle',
+        component: Lifecycle,
     },
     {
         path: "/head",
@@ -94,7 +99,7 @@ const routerGo = (t, path, value, _target = undefined) => {
     if (typeof value === "string") {
         params = '/' + value;
     } else {
-        params = value ? "/" + Base64.encode(JSON.stringify(value)) : "";
+        params = value ? "/" + Base64.encode(JSON.stringify(value)) : Void;
     }
 
     for (let i in t.props.routes) {
@@ -123,10 +128,10 @@ export const RouteWithSubRoutes = route => {
         render={props => {
             // console.log(route.component, '123')
             return <route.component {...props}
-                routerGo={routerGo}
-                routerGet={routerGet}
-                ModuleReduxThunk={ModuleReduxThunk.ModuleCount}
-                routes={route.children} />
+                                    routerGo={routerGo}
+                                    routerGet={routerGet}
+                                    ModuleReduxThunk={ModuleReduxThunk.ModuleCount}
+                                    routes={route.children}/>
         }
         }
     />

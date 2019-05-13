@@ -37,6 +37,10 @@ class Head extends Component {
         console.log(this.props, "head")
         return (
             <div className={styles.lessClass} >
+                <div onClick={()=>{
+                    console.log(this.props.history.push('/'))
+                    // console.log(history.push('/head'))
+                }}>6</div>
                 <Button type="primary">Primary</Button>
                 <Input size="large" placeholder="large size" />
                 {/* <div> */}
